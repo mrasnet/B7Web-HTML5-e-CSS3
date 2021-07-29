@@ -1,0 +1,11 @@
+/*  #M8 aula #8: Seletor de Elemento Vazio 
+
+    Aplicar estilos em elementos vazios
+*/
+div{
+    margin: 20px;
+    height: 30px;
+}
+div:empty{
+    background-color: #f00;
+}
