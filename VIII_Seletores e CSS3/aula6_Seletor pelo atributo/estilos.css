@@ -1,19 +1,26 @@
-/*  #M8 aula #6: Seletor pelo atributo     
+/*  #M8 aula #6 e #7: Seletor pelo atributo     
 
     Selecionando um item pelo o seu atributo:
 
     Podemos selecionar um item que possui um atributo ou que possui determinado valor para um atributo
 
-    [atributo]              - selecionando apenas o nome do atributo
-    ex.:   input[atr]       - selecionando o item que possui determinado atributo
+    [atr]                   - selecionando apenas com o nome do atributo
+    ex.:   input[atr]       - selecionando o item com a tag que possui determinado atributo
     .classe[atr]            - selecionando uma classe que possui determinado atributo
-    #id[atr]                - selecionando o id de um item que possui determinado atributo - talvez desnecessário*
+    #id[atr]                - selecionando o item com o id que possui determinado atributo - talvez desnecessário*
 
     ex.: [type=text]        - selecionando um item que possui um valor pré definido para um determinado atributo
     ex.: [name="usuario"]   - selecionando um item que possui um valor definido para um determinado atributo
+
+    Para selecionar com base numa parte do valor contido na propriedade:
+
+    ex.: [href*="futebol"]  - irá selecionar os itens que possui no conteúdo do href o texto "futebol"
+    ex.: [href^="https"]    - irá selecionar os itens que no valor do atributo inicia com o argumento passado
+    ex.: [href$="/"]        - irá selecionar os itens que no valor do atributo termina com o argumento passado 
+
 */
 input, a{
-    display: block;
+    display: block; /* apenas para exibir em bloco */
 }
 
 input[required]{
@@ -21,10 +28,26 @@ input[required]{
     font-size: 18px;
 }
 
+[type=password]{
+    color: rgb(108, 158, 50);
+}
+
 input[name="usuario"]{
     color: #fff;
 }
 
-[type=password]{
-    color: rgb(108, 158, 50);
+/* Se colocado sem o asterisco irá buscar o href com o valor "futebol" - literalmente - ou se colocarmos a URL inteira, irá trazer o item
+com esse URL */
+[href*="futebol"] { 
+    background-color: rgb(108, 158, 50);
+}
+[href*="economia"] { 
+    background-color: rgb(50, 133, 158);
+}
+
+a[href^="https:"]{ /* aqui só irá valer para itens que forem a tag de ancora */
+    font-size: 22px;
+}
+a[href$="/"]{
+    color: rgb(65, 83, 66);
 }
