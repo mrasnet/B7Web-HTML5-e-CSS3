@@ -1,0 +1,27 @@
+/* #M2 aula #6: A base geral do CSS 
+
+  Formas de seleção no CSS
+    1. através do nome da tag do elemento             - NOME_DO_ELEMENTO {}
+    2. através de um id                               - #ID_DO_ELEMENTO {}
+    3. através de uma class - A que mais será usada   - .CLASS_DO_ELEMENTO {}
+    4. em mais de um elemento                         - ELEMENTO, OUTRO_ELEMENTO {}
+    5. em um elemento que é precedido por outro elem. - ELEMENTO OUTRO_ELEMENTO {}
+*/
+
+#titulo { /* um id atribuído a um elemento é úncio daquele elemento */
+  color: rgb(102, 8, 8); /* Id é mais utilizado quando se quer colocar uma propriedade específica em um elemento específico */
+}
+
+.texto { /* diferentes elementos podem possuir uma determinada class */
+  color: white;
+}
+/* Uma outra forma que permite definir um conjunto de propriedade para ambos, id e class */
+#titulo, .texto{
+    font-family: sans-serif;
+    background-color: #008080;
+}
+/* Vai entrar nos elementos ol e procurar os elementos li (se.: ol, li - aplicaria o efeito em ambos);
+No caso, só vai aplicar o efeito para elementos li precedidos de ol */
+ol li {
+  color: rebeccapurple;
+}

@@ -1,0 +1,22 @@
+/* #M6 aula #4: Compatibilidade com HTML 5
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+
+matheus {
+    background-color: #ca53a6;
+    font-family: Arial, sans-serif;
+    padding: 7px;
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 1px 2px 3px #000;
+}

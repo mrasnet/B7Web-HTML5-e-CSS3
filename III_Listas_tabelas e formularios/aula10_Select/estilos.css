@@ -1,0 +1,23 @@
+/* #M3 aula #10: Select */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+
+div {
+    width: 900px;
+    background-color: rgb(221, 250, 154);
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: 1px solid rgb(66, 63, 63);    
+}
+form input, select{
+    margin-right: 30px;
+    margin-bottom: 10px;
+}

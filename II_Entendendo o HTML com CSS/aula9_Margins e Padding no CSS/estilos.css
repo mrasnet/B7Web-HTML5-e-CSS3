@@ -1,0 +1,22 @@
+/* #M2 aula #9: Margins e Padding no CSS
+
+    Todo elemento possui: conteúdo, padding, borda e margin (No caso, pode ter a borda ou o conteúdo não definidos)
+  
+    padding: espaçamento interno do elemento
+    margin: espaçamento externo do elemento
+
+    padding (margin) - top (right - bottom - left): argpx, ou definir os 4: padding (margin): arg1px argpx2
+    argpx3 argpx4; (sentido horário)
+
+    Outra variação: padding (margin): arg1px arg2px; (arg1px = top-bottom, arg2px = left-right)
+    outra: padding (margin): arg1px arg2px arg3px; (arg1px = top, arg2px = left-right, arg3px = bottom)
+*/
+.exemplo {
+    border: 1px solid #00FF00;
+    padding: 10px;
+    margin: 10px;
+}
+/* Usar Ferramentas de desenvolverdor do browser Google é bom para visualizar */
+body{
+  margin: 0px;/* definos margem 0 pq por padrão o body possui um margin de 8px */
+}

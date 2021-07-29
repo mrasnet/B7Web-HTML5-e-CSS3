@@ -1,0 +1,51 @@
+<!-- #M3 aula #5: Tabelas no HTML 
+
+  * Para se definir tabelas colocamos linhas, e nessas definimos as colunas, a regra é: para as demais linhas define-se o numero de colunas
+    definidas na primeira linha, a não ser que se queira alguma outra linha com um número diferente de colunas.
+
+    table = define a area da tabela
+    tr = linha / td = coluna de linha / th = coluna de cabeçalho da tabela 
+    
+    thead = conteúdo de cabeçalho / tbody = conteúdo da tabela 
+        
+    Outras tags importantes, nesse caso sem efeito visual mas muito útil para organização além de dizer ao browser o que é cabeçalho e o que
+    é tabela de fato, oq é muito útil em casos onde se necessita imprimir a tabela: <thead> e <tbody>
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+   <h1>Página Teste</h1>
+    <table border="1" width="400">
+       <thead>
+            <tr>
+                <th>Item 1</th>
+                <th>Item 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

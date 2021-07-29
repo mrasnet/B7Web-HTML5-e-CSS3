@@ -1,0 +1,26 @@
+/*  #M5 aula #9: Aspect-ratio no @media
+
+    Usamos o @media para definirmos propriedades com base em condições. O @media é o que permite a responsividade;
+    
+    Aspect-ratio é uma técnica pouca utilizada com ressalvas para alguns casos muito especificos. O Aspect-ratio aplica efeitos quando uma 
+    condição de proporção entre altura e largura é realizada.
+
+    alternativamente ao uso do Aspect-ratio com max e mim, o uso de somente o Aspect-ratio é mais utilizado por possuir maior precisão para os
+    casos que dele precisam.
+
+*/
+@media (aspect-ratio: 1/1){ /* Aqui aplica o fundo violeta quando a proporção de resolução 1/1 é satisfeita */
+    body{
+        background-color: #8a2be2;
+    }
+}
+@media (min-aspect-ratio: 2/1){ /* Aqui aplica quando a condição de proporção mínima de 2/1 é satisfeita */
+    body{
+        background-color: rgb(172, 29, 29);
+    }
+}
+@media (max-aspect-ratio: 1/2){ /* Aqui aplica quando a condição de proporção máxima de 1/2 é satisfeita */
+    body{
+        background-color: rgb(29, 172, 129);
+    }
+}

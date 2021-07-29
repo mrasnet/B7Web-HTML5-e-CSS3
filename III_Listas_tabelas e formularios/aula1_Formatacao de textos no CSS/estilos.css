@@ -1,0 +1,36 @@
+/* #M3 aula #1: Formatação de textos no CSS 
+
+    1. color            - define a cor da fonte 
+    2. font-size        - define o tamanho da fonte
+    3. font-weight      - permite definir valores como: negrito (bold)/ normal, para a fonte 
+    4. font-family      - define o(s) tipo(s) de fonte(s)
+    5. text-align       - define o alinhamento do texto (padrão: left - also: right / center / justify)
+    6. text-decoration  - define decorações no texto - (none / underline / overline/ line-through)   
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #d61eae;
+    font-size: 20px;
+    font-weight: bold; /* Negrito , normal é o padrão */
+    font-family: helvetica, arial, Comic Sans Ms; /* É possível definir mais de um tipo de fonte, nesse caso prevalecerá a primeira disponível. 
+    Se não tiver a fonte especificada, o browser se encarrega de colocar a font padrão que normalmente é o serif */
+    text-align: left; /* left é o alinhamento padrão, temos ainda o right, center e justify */
+}
+
+a {
+    text-decoration: none; /* tira decorações do texto, aqui irá tirar o underline. além desse há o overline e o line-through, semelhantes.
+    Aqui é usado para tirar o underline de links */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}

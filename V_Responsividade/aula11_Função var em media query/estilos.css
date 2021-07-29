@@ -1,0 +1,56 @@
+/*  #M5 aula #11: Função var em media query
+
+    Permite criar uma variável em algum lugar e utiliza-la onde quiser. Quando se cria uma variável só pode utiliza-la no elemento onde foi 
+    criada ou em elementos dentro desse. Nisso, há uma forma de criar de modo que fique válido em todo o documento.
+    
+    Regras para definição de nome de variáveis: não utilizar espaços, nem caracteres especiais assim como não inicializar com números (números
+    no meio somente).
+
+    Criar variáveis nos permite realizar definições em uma parte do código de forma a obter resultado em todo local que utiliza as variáveis.
+
+    Ao utilizar com o @media, ao invez de substituir a variável por outra, podemos redefinir a mesma var de modo a aplicar em todo canto que
+    dela utilize. 
+*/
+:root{/* nome das variáveis vem após o (--) */
+    --bg-color: #317bdb;
+    --bg-second: #aebb3d;
+    --font-color: #fff;
+    --font-size: 25px;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+}
+h1{
+    color: var(--font-color, #d0d); /* aqui estamos especificando que se caso a var "font-color" não existir aplicar a cor #d0d */
+}
+.container{
+    --verde: #008000; /* definindo uma var dentro de container */
+    background-color: var(--bg-second);
+    color: var(--verde);
+}
+
+@media (max-width: 450px){
+    /* Ao utilizar com o @media, ao invez de substituir a variável por outra, podemos redefinir a mesma var de modo a aplicar em todo canto que
+    dela utilize. */
+    :root{
+        --font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

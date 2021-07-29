@@ -1,0 +1,16 @@
+/*  #M4 aula #3: Cascata
+
+    Ordem de prioridade para aplicação de efeitos: CCS inline¹, CCS interno² e CCS externo³
+    A aplicação é de cima para baixo, e a ordem é:
+        1. CCS externo é aplicado
+        2. CCS interno são aplicados
+        3. CCS inline é aplicado
+    Como o CSS funciona de cima para baixo, o último aplicado (inline) é o que possuirá maior prioridade
+
+*/
+body{
+    margin: 0;
+}
+.container{
+    color: #f00;
+}

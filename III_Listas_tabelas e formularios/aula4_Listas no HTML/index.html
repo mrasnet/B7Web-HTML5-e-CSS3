@@ -1,0 +1,44 @@
+<!-- #M3 aula #4: Listas no HTML
+
+    ol = ordered list (lista ordenada)
+    ul = unordered list (lista não ordenada)
+    li = item de lista
+
+    Para ul, define os tipos de "enumerador": 
+    list-style-type: disc = disco (padrão) / square = quadrado / circle = circulo / none = nenhum
+
+    Em lista ordenadas (ol) é possível indicar o enumerador por meio da propriedade type:
+    argumentos: 1 = numeros / a(A) = alfabético / i(I) = algarismo romano
+    
+    É possível também com a propriedade start definir o ponto de onde uma lista ol será enumerada
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+    <h1>Página de Teste</h1>
+    <h2>Lista desordenada</h2>
+    <ul style="list-style-type: square;"> 
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+    </ul>
+    
+    <h2>Lista ordenada</h2>
+    <ol type="i" start="5"> 
+        <li>Café</li>
+        <li>Chá <!--Lista dentro de lista: No caso, temos uma nova lista dentro de um item de uma lista mais externa -->
+            <ul> <!-- lista desordenada dentro de uma ordenada -->
+                <li>Chá Preto</li>
+                <li>Chá Verde</li>
+            </ul>
+        </li>
+        <li>Leite</li>
+    </ol>
+</body>
+</html>

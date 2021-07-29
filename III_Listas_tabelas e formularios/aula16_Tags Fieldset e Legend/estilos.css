@@ -1,0 +1,15 @@
+/* #M3 aula #16: Tags Fieldset e Legend
+
+
+*/
+
+fieldset {
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border: 2px solid #6169da;
+}
+legend{
+    background-color: #6169da;
+    color: #fff;
+    padding: 5px;
+}

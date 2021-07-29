@@ -1,0 +1,79 @@
+<!-- #M3 aula #14 e 15: Formatando formulários no CSS 
+
+    Formulários:
+
+    1. form = define grupo de formulario
+    2. GET = manda os dados pela URL / POST = envia internamente
+
+    3. input       
+    propriedades: 
+    type    - text (password / email) , checkbox, radio, submit;
+    name    - define um nome
+    value   - define um valor para o campo 
+    
+    4. variações do text (para browser moderno): color / date / datetime-local / time / week / month / number / range / search / tel / url    
+    
+    5. Select - seleção / option - opção
+    propriedades select:  name / size - multiple
+    propriedades option:  value / selected 
+
+    6. textarea - área de texto - propriedades: rows / cols (define o número de linhas e colunas, porém está em desuso e diferentes navegadores
+    podem determinar diferentes valores definidos nessas propriedades) 
+
+    7. button - botão - dentro de um formulário age da mesma forma que o input submit, porém pode ser usado fora de formulários 
+
+    8. label  - etiqueta - serve para nomear campos exibidos ao usuário
+    propriedades: for = define o id de um campo associado a esse label - outra forma de ter o mesmo efeito é colocar o campo dentro da tag label
+--->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+   <h1>Página Teste</h1>
+
+   <h2>Área de Cadastro</h2>
+   <div>
+   <!-- grupo de formulário -->
+   <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
+        
+        <label>
+            Nome Completo:<br/>
+            <input type="text" name="nome"/> 
+        </label>
+        
+        <label>
+            Descrição:<br/>
+            <textarea name="descricao"></textarea>
+        </label>
+
+        <label>
+            Categoria:<br/>
+            <select name="categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="checkbox"/>
+            Eu declaro que li e aceito os <a href="termos.html" target="_blank" class="termoslink">termos de uso.</a>
+        </label>
+
+        <button>Fazer Cadastro</button>
+   </form>
+    </div>
+    
+   <h2>Área de Login</h2>
+   <form><!-- grupo de formulário -->
+
+   </form>
+</body>
+</html>

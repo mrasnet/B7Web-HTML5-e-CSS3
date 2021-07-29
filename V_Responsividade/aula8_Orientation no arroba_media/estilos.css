@@ -1,0 +1,31 @@
+/*  #M5 aula #8: Orientation no @media 
+
+    Usamos o @media para definirmos propriedades com base em condições. O @media é o que permite a responsividade;
+    
+    Orientation     - serve para identificar se a tela está marjoritariamente vertical ou horizontal
+        landscape   - marjoriatariamente horizontal
+        portrait    - marjoritariamente vertical
+    
+    Ao abrir o teclado o dispositivo diminui a resolução e isso pode aplicar o efeito horizontal ainda que o dispositivo esteja na vertical. 
+    isso ocorre pq o Orientation se basea na resolução onde esse irá alternar entre vertical e horizontal a partir dos tamanhos desses.
+    Logo, o que temos na verdade é que ele não se basea na orientação de fato da tela e sim nas proporções de tela disponíveis.
+*/
+body{
+    display: flex;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000;
+}
+
+@media (orientation: landscape){
+    body{
+        flex-direction: row;
+    }
+}
+@media (orientation: portrait){
+    body{
+        flex-direction: column;
+    }
+}

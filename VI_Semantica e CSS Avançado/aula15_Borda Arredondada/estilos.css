@@ -1,0 +1,28 @@
+/* #M6 aula #15: Borda Arredondada
+    
+    Serve para qualquer elemento
+*/
+body {
+   margin: 0;
+}
+
+#teste {
+    background-color: green;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 10px;  se colocarmos 100 (a metade da largura - width), teremos um circulo */
+    /* Quando se quer diferentes valores para cada propriedade */
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 10px;
+}
+
+input {
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 5px;
+    height: 25px;
+    width: auto;
+}
+

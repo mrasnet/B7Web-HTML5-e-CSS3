@@ -1,0 +1,33 @@
+/* #M2 aula #11: Dicas sobre width e height 
+
+  1. *{}  - asterisco + chaves                          - permite aplicar efeito a todos elementos
+  2. box-sizing : propri: (content-box / border-box)    - define como deve ser considerado o tamanho de um elemento
+  3. body{ margin:0px }                                 - retira o margin de 8px padrão do body
+
+  box-sizing propri:
+  content-box:                                    - (padrão) Define que o tamanho de um elemento é o seu conteúdo mais padding, borda e margin
+  border-box:                                     - Define as dimensões do contéudo do elemento como sendo as dimensões do próprio elemento 
+*/
+* { 
+  box-sizing: border-box; 
+}
+body{
+  margin: 0px;
+}
+/* A configuração: *{ box-sizing: border-box }, deve ser padrão para todos os projetos, pois facilita a "conta" uma vez que quando dissermos 
+que um elemento tem "400px" ele todo terá esse tamanho, e não terá 400px acrescido de outros valores definidos no border e padding (margin não,
+pois ele é externo), que aumentam o tamanho final do elemento.
+
+Outra configuração que deve ser sempre implementada é o body margin ZERO, pois nos permite ter controle de toda a tela */
+.exemplo {
+    background-color: #0F0;
+    /* width e height definem o tamanho do conteúdo do elemento */
+    width: 400px; 
+    height: 400px;
+    /* Como definimos a propriedade border-box, border, padding e margin serão descontados dos 400px, oque diminui o tamanho disponível para 
+    o conteúdo do elemento */
+    border: 5px solid #000;
+    padding: 10px;
+    margin: 20px;
+}
+

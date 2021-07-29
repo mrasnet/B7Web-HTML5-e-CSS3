@@ -1,0 +1,25 @@
+<!--  #M6 aula #13: AutoComplete
+    
+    Habilitado por padrão, permite oferecer opções de input já inseridos. Para alguns tipos de sistemas, é interessante desabilitar essa opção,
+    tipo em sistemas bancários onde não queremos que um autocomplete possa ser usado por alguém não autorizado
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <form method="POST">
+        <label>Login           
+            <input type="email" name="usuario" placeholder="Usuário" autofocus autocomplete="off">
+        </label><br/><br/>
+        <label>Senha
+            <input type="password" name="senha" placeholder="senha">
+        </label><br/><br/>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- #M3 aula #10: Select 
+    
+    Formulários:
+
+    1. form = define grupo de formulario
+    2. GET = manda os dados pela URL / POST = envia internamente
+    
+    3. input        - type: text (password / email) , checkbox, radio, submit;
+    4. propriedades: name = define um nome / value = define um valor para o campo 
+    
+    5. variações do text (para browser moderno): color / date / datetime-local / time / week / month / number / range / search / tel / url    
+    
+    6. Select - seleção / option - opção:
+    propriedades do select:  name / size - multiple
+    propriedades do option:  value / selected
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+   <h1>Página Teste</h1>
+
+   <h2>Área de Cadastro</h2>
+   <div>
+   <!-- grupo de formulário -->
+   <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
+        <input type="text" name="nome" value="Insira o nome"/>       
+        
+        <select name="selecao">
+            <option>--- // ---</option><!-- é comum definirem um option vazio, devido o fato de que por padrão o primeiro option é exibido na seleção -->
+            <option>Mais Vendidos</option>
+            <option value="ProdutosRecentes" selected>Recentes</option><!-- é possível definir um valor diferente do que o usuário ver no
+            formulário. O selected permite definir uma option padrão para exibição na seleção -->
+        </select>
+        <!-- É possivel definir um campo de multipla-seleção, size define o valor máximo para seleção - *não muito certo se o size funciona bem -->
+        <select name="selecao2" size="3" multiple> 
+            <option>Mais Vendidos</option>
+            <option>Recentes</option>
+            <option>Melhor avaliados</option>
+            <option>Mais baratos</option>
+        </select>
+        <!-- botão de envio -->
+        <br/><input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
+   </form>
+    </div>
+    
+   <h2>Área de Login</h2>
+   <form><!-- grupo de formulário -->
+
+   </form>
+</body>
+</html>

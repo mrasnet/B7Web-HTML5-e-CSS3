@@ -1,0 +1,23 @@
+/* #M3 aula #11, 12 e 13: Textarea, Button e Label */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+
+div {
+    width: 900px;
+    background-color: #ddfa9a;
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: 1px solid #423f3f;    
+}
+form input, select{
+    margin-right: 30px;
+    margin-bottom: 10px;
+}

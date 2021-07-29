@@ -1,0 +1,17 @@
+/* #M3 aula #3: Adicionando Fontes Externas */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}
+
+p {
+    color: #00f;
+    font-size: 20px;
+    font-family: 'chilanka', cursive; /* define a font importada do google */
+}   
+

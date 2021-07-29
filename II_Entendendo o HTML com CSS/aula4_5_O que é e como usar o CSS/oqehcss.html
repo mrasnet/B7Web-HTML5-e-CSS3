@@ -1,0 +1,51 @@
+<!-- #M2 aula #4 e 5: O que é e como usar o CSS? 
+
+    3 formas de inserção do CSS no HTML: 
+    - CSS inline
+    - CSS interno
+    - CSS externo
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <style>/* CSS interno - sempre entre as tags style */
+        h2{ color:blueviolet }
+        a{ color: rgb(198, 248, 123);}
+        li{ 
+            font-weight: bold;
+            color: blueviolet;
+        }
+    </style>
+    <link rel="stylesheet" href="estilos.css"/><!-- CSS externo - forma mais organizada -->
+</head>
+<body>
+    <h1 style="color: red;font-size: 25px;">Texto de título em h1</h1><!--CSS inline --> 
+    <h2>Texto de título em h2</h2>
+    <h6>Texto de título em h6</h6>
+    <p>Texto do parágrafo para observação da tag p </p> 
+    <p>Texto 2 do parágrafo para observação da tag p </p> 
+
+    <a href="http://www.google.com" style="font-size: 30px;">Google</a><!--CSS inline --> 
+    <br/>
+    <img src="http://www.google.com/logos/google.jpg" alt="Logo do Google" style="width: 300px;"/><!--CSS inline --> 
+    <br/><br/>
+    <button>Click aqui</button>
+
+    <h3>Lista de ingredientes de bolo com ul</h3>
+    <ul>
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Sal</li>
+        <li>Corante</li>
+    </ul>
+    <h3>Lista de ingredientes de bolo com ol</h3>
+    <ol>
+        <li>Farinha</li>
+        <li>Ovo</li>
+        <li>Sal</li>
+        <li>Corante</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* #M2 aula #4 e 5: O que é e como usar o CSS?
+
+  3 formas de inserção do CSS no HTML: 
+    - CSS inline
+    - CSS interno
+    - CSS externo
+*/
+h3{ 
+    color: brown;
+    font: sans-serif;
+}

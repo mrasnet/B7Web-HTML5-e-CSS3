@@ -1,0 +1,35 @@
+<!--  #M6 aula #22: Meta tag (social sharing)
+   
+    Define as informações e como essas serão exibidas quando um usuário compartilha um link de nossa página.
+
+    # Para funcionar a página tem que estar online
+    # ferramenta utilizada do Facebook: Sharing Debugger (sempre necessário refazer o processo após definir novas propriedades no meta 
+    social sharing)
+    # Opções de type que existe: article / product / website (padrão) - ver todas: Facebook social sharing/ docs/ Open Graph Stories/ Reference
+    # Para ver todas as propriedades: Facebook social sharing/ docs/ Open Graph Stories/ Object Properties
+
+    principais propriedades: og:url / og:type / og:title / og:description / og:image (outra que pode ser interessante é a referente a 
+    localidade)
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <!-- define o link          - og = Open graph - a ordem na qual definimos os metas não importa -->
+    <meta property="og:url"             content="http://www.dodominioexemplo.com.br/artigoexemplo" />
+    <!--  define o tipo -->
+    <meta porperty="og:type"            content="article" />
+    <!--  define o título -->
+    <meta property="og:title"           content="Título do Artigo" />
+    <!--  define a descrição -->
+    <meta property="og:description"     content="Descrição do artigo de exemplo" />
+    <!--  define a imagem       - Tamanho padrão que o Facebook recomenda: 1200x630 com no máximo 8MB -->           
+    <meta property="og:image"           content="http://www.dodominioexemplo.com.br/artigoexemplo/imagemartigo.jpg" />
+
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <div class="exemplo"></div>
+</body>
+</html>

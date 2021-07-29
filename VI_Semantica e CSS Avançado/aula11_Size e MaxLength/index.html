@@ -1,0 +1,25 @@
+<!-- #M6 aula #11: Size e MaxLength
+
+    size:  especifica o tamanho da caixa (input), entretanto, preferivelmente utilizar o width com CSS
+    MaxLength:  especifica a capacidade máxima de char que o campo recebe - pode vir a se tornar muito útil
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <form method="POST">
+        <label>Login    <!-- apesar de definir 25 em size e maxlength, o tamanho não fica justo entre o input e os caracteres -->
+            <input type="text" name="usuario" placeholder="Usuário" autofocus size="25" maxlength="25">
+        </label><br/>
+        <label>Senha
+            <input type="password" name="senha" placeholder="senha">
+        </label><br/>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- #M4 aula #2: Especificidade
+
+    O CSS define propriedades de cima para baixo, as últimas feitas prevalecem quando não há especificidade explicita.
+    classes são mais especificas que tags, e se usarmos - elemento1 elemento2{pro1: arg} - temos uma maior especificidade do que
+    se usassemos apenas: elemento2{pro1: arg}
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title> </title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <h1>Título do Site</h1>
+    <div class="container">
+        Este é um <strong>texto</strong> qualquer
+    </div>
+    <div>Algum texto qualquer</div>
+</body>
+</html>

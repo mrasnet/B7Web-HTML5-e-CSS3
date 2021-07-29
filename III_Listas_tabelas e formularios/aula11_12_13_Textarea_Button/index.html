@@ -1,0 +1,59 @@
+<!-- #M3 aula #11, 12 e 13: Textarea, Button e Label
+
+    Formulários:
+
+    1. form = define grupo de formulario
+    2. GET = manda os dados pela URL / POST = envia internamente
+    
+    3. input        - type: text (password / email) , checkbox, radio, submit;
+    4. propriedades: name = define um nome (imprescendível) / value = define um valor para o campo 
+    
+    5. variações do text (para browser moderno): color / date / datetime-local / time / week / month / number / range / search / tel / url    
+    
+    6. Select - seleção: option - opção:
+    propriedades select:  name / size - multiple
+    propriedades option:  value / selected 
+
+    7. textarea - área de texto - propriedades: rows / cols (define o número de linhas e colunas, porém está em desuso e diferentes navegadores
+    podem determinar diferentes valores definidos nessas propriedades) 
+
+    8. button - botão - dentro de um formulário age da mesma forma que o input submit, porém pode ser usada fora de formulários 
+
+    9. label  - etiqueta - serve para nomear campos exibidos ao usuário
+    propriedades: for = define o id de um campo associado a esse label - outra forma de ter o mesmo efeito é colocar o campo dentro da tag label
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+   <h1>Página Teste</h1>
+
+   <h2>Área de Cadastro</h2>
+   <div>
+   <!-- grupo de formulário -->
+        <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
+                <label for="campoNome">Nome:</label><!-- for associa o label com um campo específico -->
+                <input id="campoNome" type="text" name="nome" value="Insira o nome"/>   
+                <br/>
+                <!-- Segundo forma: mesmo efeito de utilizar o for e sem necessidade de atribuir um id ao input-->
+                <label><input type="checkbox" name="campodeMarcar"/>Li e aceito os termos de uso</label>
+                
+                <textarea name="areatexto">O texto que eu colocar aqui fica dentro da área de texto</textarea>
+                <br/>
+                <button>Texto do botão</button>
+                <!-- botão de envio -->
+                <input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
+        </form>
+    </div>
+    
+   <h2>Área de Login</h2>
+   <form><!-- grupo de formulário -->
+
+   </form>
+</body>
+</html>

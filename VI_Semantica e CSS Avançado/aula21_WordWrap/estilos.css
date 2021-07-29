@@ -1,0 +1,18 @@
+/* #M6 aula #21: WordWrap
+    
+    word-wrap: break-word   - quebra a palavra para caber inteiramente dentro do elemento ao qual está contida - "normal" vem como valor padrão
+*/
+
+body {
+   margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    /* O seguinte problema poderia ser resolvido com um overflow hidden, entretanto estaria cobrindo o texto */
+    /* overflow: hidden; */
+    word-wrap: break-word; 
+}
+

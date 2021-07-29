@@ -1,0 +1,15 @@
+/*  #M6 aula #8: Tag Áudio
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+audio {
+    outline: 0;
+}

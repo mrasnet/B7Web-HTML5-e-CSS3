@@ -1,0 +1,29 @@
+/*  #M5 aula #pré-aula3: Media Query pt1
+
+    @media only screen and (condição)... and (condição)...     - Permite mudar o aspecto visual dos elementos de acordo com condições no CSS
+   
+    orientation:landscape                                      - muda para quando o dispositivo estiver deitado
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+
+.teste {
+    width: 700px;
+    height: 300px;
+    background-color: red;
+}
+/** orientation:landscape - muda para quando o dispositivo estiver deitado  */
+@media only screen and (min-width:200px) and (max-width:600px){ 
+    /* dentro fica tudo que se pretende mudar */
+    .teste{
+        background-color: green;
+        width: 200px;
+    }
+}

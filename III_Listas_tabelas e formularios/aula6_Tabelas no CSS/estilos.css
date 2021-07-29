@@ -1,0 +1,40 @@
+/* #M3 aula #6: Tabelas no CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+/* tr = linha / td = coluna de linha / th = coluna do cabeçalho da tabela */
+table {
+    width: 800px;
+}
+
+ th, td {
+    /*border: 1px solid #000;*/
+    padding: 8px;
+    text-align: left;
+}
+
+table thead {
+    background-color: #c294ec;
+}
+table tbody {
+    background-color: #cee9ee;
+}
+/*
+tbody td {
+    border-bottom: 1px solid #000;
+}*/
+
+tbody tr:nth-child(even){/* Essa linha tem que vir antes do tbody tr:hover. Aplica o efeito numa linha sim e em outra não (PAR-IMPAR) */
+    background-color:  #e9f9fc;
+}
+
+tbody tr:hover { /* Só vai funcionar em linhas dentro do tbody*/
+    background-color: #a9a9a977;
+}

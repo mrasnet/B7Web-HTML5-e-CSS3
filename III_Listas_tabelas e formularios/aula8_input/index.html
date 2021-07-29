@@ -1,0 +1,45 @@
+<!-- #M3 aula #8: input 
+
+    Formulários:
+
+    1. form = define grupo de formulario
+    2. GET = manda os dados pela URL / POST = envia internamente
+
+    2. input        - type: text (password / email ) / checkbox / radio / submit
+    3. propriedades: name = define um nome / value = define um valor para o campo
+
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+   <h1>Página Teste</h1>
+
+   <h2>Área de Cadastro</h2>
+   <div>
+   <!-- grupo de formulário -->
+   <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
+        <input type="text" name="nome" value="Insira o nome"/>
+        <br/><input type="password" name="senha"/>
+        <br/><input type="checkbox" name="caixa"/>
+        <!-- Para utilziar um botão de radio é necessário definir um grupo, name define o grupo -->
+        <br/>
+        <input type="radio" name="sexo" value="m"/> Masculino
+        <input type="radio" name="sexo" value="f"/> Feminino
+        <br/><input type="email" name="email" value="Insira o email"/> <!-- variante do campo de texto, porém é pre-formatado para receber email -->
+        <!-- botão de envio -->
+        <br/><input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
+   </form>
+    </div>
+    
+   <h2>Área de Login</h2>
+   <form><!-- grupo de formulário -->
+
+   </form>
+</body>
+</html>

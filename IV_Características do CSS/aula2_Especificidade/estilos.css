@@ -1,0 +1,15 @@
+/*  #M4 aula #2: Especificidade 
+
+    O CSS define propriedades de cima para baixo, as últimas feitas prevalecem quando não há especificidade explicita.
+    classes são mais especificas que tags, e se usarmos - elemento1 elemento2{pro1: arg} - temos uma maior especificidade do que
+    se usassemos apenas: elemento2{pro1: arg}
+*/
+body{
+    margin: 0;
+}
+.container{
+    color: #f00; /* classe é mais especifico que tag, aqui a cor será vermelha */
+}
+div{
+    color: #00f;
+}

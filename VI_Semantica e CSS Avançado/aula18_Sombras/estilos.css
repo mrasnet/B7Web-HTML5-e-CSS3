@@ -1,0 +1,27 @@
+/* #M6 aula #18: Sombras
+    
+    box-shadow      - define sombra para objetos
+    text-shadow     - define sombra para textos
+
+    box(text)-shadow:        distan. horiz / distan. vert (dh. e dv. valores positivos e negativo)/ espalhamento / cor 
+    Se quiser sombra em todas as direções, é só zerar distan. horiz e vert.
+*/
+
+body {
+   margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px #888;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px #888;
+    color: green;
+}
+

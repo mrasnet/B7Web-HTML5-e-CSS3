@@ -1,0 +1,33 @@
+/*  #M4 aula #7: Unidades de medida relativas (viewport)
+
+    Unidades de medidas que irão mudar de tamanho com base nos elementos da própria página
+
+    em      - "1 em" corresponde ao valor definido na classe pai, "2 em"... em diante, é esse valor multiplicado pelo o inteiro definido
+    rem     - evolução do "em", entretanto possui a diferença em que os elementos definidos com rem relacionam-se diretamente com o elemento 
+    root (com o valor definido no primeiro elemento da estrutura).
+        O valor de referencia é único para todos que dele desejam usar com o rem - muito útil para responsividade
+        Quando não se define um valor num elemento root, o rem é definido pelo o valor padrão, geralmente o padrão do html, 16px.
+   
+    %   - porcentagem:  refere-se ao espaço disponível dentro de um container e não do monitor. Principalmente quando se trabalha com a largura
+    uma div irá responder diretamente ao seu container. Geralmente é utilizada para estruturas. 
+    ex  - refere-se ao tamanho da letra x minúscula da fonte usada para definir "1 ex" - pouco utilizada.
+    ch  - refere-se ao espaçamento de um caractere, entretanto só serve para fontes monospace (que possuem o mesmo espaçamento para todos os 
+    caracteres).
+
+    viewport - relativo ao espaço disponível para a visualização do usuário
+    vh       - refere-se a 100% do espaço visível para uma data propriedade (para altura) - pode ser utilizado para definir um menu lateral
+    hw       - refere-se a 100% do espaço visível para uma data propriedade (para largura)
+    Pouco utilizados:
+        vmin     - irá se basear no menor valor definido entre a largura ou altura (em computadores, geralmente a altura é menor, em celulares 
+        o oposto)
+        vmax    -  irá se basear no maior valor definido entre a largura ou altura
+*/
+body{
+    margin: 0;
+}
+
+.box{
+    width: 50vw;
+    height: 100vh;
+    background-color: #999;
+}

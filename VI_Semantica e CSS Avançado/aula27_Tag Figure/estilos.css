@@ -1,0 +1,23 @@
+/* #M6 aula #27: Tag Figure
+    
+   Através do HTML semântico ajuda nos motores de busca. Algumas dessas tags tem efeito visual.
+   Tag Figure      - utilizada quando queremos adicionar fotos e legenda para essas fotos (geralmente não utilizamos quando temos somente a
+   imagem. Nisso utilizamos somente o img).
+*/
+
+body {
+   margin: 0;
+}
+
+/* Configurações semelhantes a essas geralmente são feitas */
+figure{
+   padding: 5px;
+   margin: 0;
+   border: 1px solid #ccc;
+}
+figcaption{
+   background-color: #000;
+   color: #fff;
+   text-align: center;
+   padding: 2px;
+}

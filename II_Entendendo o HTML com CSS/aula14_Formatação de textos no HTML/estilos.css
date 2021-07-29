@@ -1,0 +1,9 @@
+/* #M2 aula #14: Formatação de textos no HTML */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+}

@@ -1,0 +1,23 @@
+/* #M6 aula #9: Placeholder 
+    
+    Serve como indicativo do texto a ser digitado pelo o usuário
+    Muito comum em campos de busca: placeholder="procurar..."
+*/
+body {
+   margin: 0px;
+   background-color: rgb(11, 104, 53);
+   
+}
+form {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(184, 184, 184);
+    margin-left: 500px;
+    margin-top: 150px;
+    border: 1px solid #000;
+}
+
+input{
+    margin: 20px 30px 10px;
+    font-size: 25px;
+}

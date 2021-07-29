@@ -1,0 +1,30 @@
+/* #M6 aula #2: Tag Header, Footer e Nav
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+
+nav {
+    height: 50px;
+    background-color: #999;
+    margin: 5px;
+}
+
+footer {
+    height: 100px;
+    background-color: #ccc;
+}
+
+header{
+    background-color: rgb(160, 80, 160);
+    color: aliceblue;
+    padding: 5px;
+}

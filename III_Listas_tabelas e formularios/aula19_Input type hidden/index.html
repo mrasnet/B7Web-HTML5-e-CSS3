@@ -1,0 +1,46 @@
+<!-- #M3 aula #19: Input type hidden
+    
+    hidden      - permite definir um campo "escondido" onde a informação pertinente não é relevante para o usuário, entretanto relevante para
+    o envio do formulário. Ex.: o país identificado por IP, ou um id de usuário. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <form method="GET">
+        
+        <input type="hidden" name="country" value="BR"/>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome:<br/>
+                <input type="text" name="name"/>
+            </label>
+            <label><br/>
+                Sobrenome:<br/>
+                <input type="text" name="lastname"/>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label><br/>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar"/>
+        
+    </form>
+</body>
+</html>

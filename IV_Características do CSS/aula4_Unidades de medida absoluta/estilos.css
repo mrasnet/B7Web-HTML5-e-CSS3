@@ -1,0 +1,18 @@
+/*  #M4 aula #4: Unidades de medida absoluta
+
+    Unidades de medida absoluta são unidades de medidas não relativas, que não sofrem interferencia de outros elementos do próprio site, ou 
+    estruturas sendo feitas.
+
+    pixel  - px:        mais utilizado para fazer sites
+    pontos - pt:        usado bastante em sites que vão imprimir (similaridade maior entre os pontos do monitor com os da impressora)
+    polegada - in:      usado para medir monitores
+    centímetro - cm:    mais utilizado também com documentos a serem impressos  
+*/
+body{
+    margin: 0;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: #999;
+}

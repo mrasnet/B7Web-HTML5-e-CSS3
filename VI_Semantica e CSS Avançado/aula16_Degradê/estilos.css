@@ -1,0 +1,28 @@
+/* #M6 aula #16: Degradê
+    
+    linear-gradient(direção, cor1, cor2...)     - direção em graus - deg - vai de valores + à - , ex.: -45 e 45
+    linear-gradient(cor1, cor2...)              - é posivel informar só as cores também
+
+    Proteções:
+
+    background: -moz-linear-gradient(args...);       - Para o Mozila 
+    background: -o-linear-gradient(args...);         - Para o Opera 
+    background: -webkit-linear-gradient(args...);    - Para o Safari
+*/
+body {
+   margin: 0;
+}
+
+.exemplo {
+    width: 500px;
+    height: 200px;
+    background-color: blue;/* Serve como padrão, caso o navegador não consiga aplica o linear-gradient */
+    background: linear-gradient(-45deg, white, blue);/* args: direção (opcional) / cor1, cor2... , cor7 */
+    /* seguintes "proteções" para garantir a compatibilidades com diferentes browsers, importante*** */
+    /*
+    background: -moz-linear-gradient( white, blue);       
+    background: -o-linear-gradient( white, blue);     
+    background: -webkit-linear-gradient( white, blue);  
+    */
+}
+

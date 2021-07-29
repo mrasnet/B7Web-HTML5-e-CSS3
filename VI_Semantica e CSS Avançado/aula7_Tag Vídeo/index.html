@@ -1,0 +1,27 @@
+<!--  #M6 aula #7: Tag Vídeo
+
+    video               - indica que ali se inicia um player de vídeo (área de vídeo) 
+        propri: width - heigth / controls = coloca os controles do player / autoplay = inicia o vídeo com a página 
+    source              - indica o diretório do vídeo - propri: src / type (extensão do vídeo)
+
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+    <!-- é obrigatório indicar o width e o height. No caso, oq está sendo definido é a area do vídeo, o vídeo em sí vai se adaptar a essa area. -->
+    <video width="500" height="300" controls autoplay><!-- o autoplay sozinho aqui nesse caso não funcionou -->
+        <source src="videonome.mp4" type="video/mp4" />
+        <!-- É possível especificar os demais formatos para o mesmo vídeo, assim evita o problema onde não seja possível reproduzir no formatado
+        mp4, entretando será necessário ter o vídeo nos demais formatos que se deseja definir:
+        <source src="videonome. ..." type="video/...">
+        <source src="videonome. ..." type="video/...">
+        -->
+    </video>
+</body>
+</html>

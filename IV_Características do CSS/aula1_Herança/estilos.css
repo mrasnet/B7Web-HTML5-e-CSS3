@@ -1,0 +1,19 @@
+/* #M4 aula #1: herança 
+
+    Propriedades definidas nos containers serão aplicadas em seus elementos contidos. Entretanto, algunas propriedades são herdadas e outras 
+    não. Dentre as herdáveis geralmente são propriedades de texto, enquanto que propriedades que dizem respeito a estrutura são os tipos
+    de propriedades que não se herdam. 
+
+*/
+body{
+    margin: 0;          /* margem é um exemplo de um propriedade não herdável */
+    color: #7593f7;  /* color é uma propriedade herdável, aqui aplicou a cor no H1 */
+}
+.container{
+    width: calc(100% - 20px); /* essa definição só foi copiada */
+    height: 200px;
+    background-color: #ccc;
+    color: #ff0000;
+    font-size: 30px;          /* propriedades de texto fazem parte de propriedades herdáveis */
+    border: 3px solid #0f0; /* bordas são propriedades não herdáveis */
+}

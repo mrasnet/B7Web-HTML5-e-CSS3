@@ -1,0 +1,23 @@
+<!--  #M6 aula #8: Tag Áudio
+
+    audio              - indica que ali se inicia um player de áudio (área de áudio) 
+        propri: controls = coloca os controles do player / autoplay = inicia o audio com a página / loop = repete o audio 
+        / muted = muta por padrão / preload = inicia o carregamento do áudio com a página 
+
+    source              - indica o diretório do audio - propri: src / type (extensão do audio)
+
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+    <audio controls autoplay loop muted preload><!-- audio/mpeg é o tipo para mp3. Os controles são definidos pelo o próprio navegador -->
+        <source src="deko_phantasy_star_online_ft_yameii.mp3" type="audio/mpeg" />
+    </audio>
+</body>
+</html>

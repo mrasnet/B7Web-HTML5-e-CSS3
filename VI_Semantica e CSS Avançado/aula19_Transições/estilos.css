@@ -1,0 +1,37 @@
+/* #M6 aula #19: Transições
+    
+    transition          - all (para todo tipo de propriedade que for mudada) / tempo em segundos / linear (É um tipo de transição, há outras. 
+    Linear especifica a transição com velocidade continua do inicio ao fim) 
+*/
+
+body {
+   margin: 0;
+}
+
+.exemplo {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: auto;
+    margin-top: 100px;
+    /* transition: all 1s linear; */
+}
+
+.exemplo:hover {
+    width: 300px;
+    background-color: blueviolet;
+    transition: all 1s linear;/* definir a transição no hover pode ser mais vantajoso */
+}
+
+a {
+    color: #1fa9ad;
+    text-decoration: none;
+    font-size: 25px;
+    transition: all 1s linear;
+}
+
+a:hover{
+    color: orangered;
+    font-size: 30px;
+}
+

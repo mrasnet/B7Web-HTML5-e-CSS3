@@ -1,0 +1,18 @@
+/*  #M5 aula #5: Imagens Responsivas Propriedade Object-fit 
+
+    Object-fit  - permite definir propriedades de exibição de uma imagem
+        *fill        - padrão, faz com que a imagem caiba inteiramente dentro das proporções definidas, mesmo que
+        para isso tenha que distorcer a imagem.
+        *contain     - faz com que a imagem caiba inteiramente dentro das proporções definidas, reduzindo-a para
+        caber sem distorcer.
+        *cover       - (o mais utilizado) partindo do centro corta a imagem para caber com base nas dimensões dadas, rendimensiona 
+        e depois corta.
+        *none        - parecido com o cover, entretanto, corta sem rendimensionar.
+        *scale-down  - parecido com o contain, porém também diminui a qualidade da imagem
+*/
+
+img{
+    height: 400px;
+    width: 400px;
+    object-fit: none;
+}

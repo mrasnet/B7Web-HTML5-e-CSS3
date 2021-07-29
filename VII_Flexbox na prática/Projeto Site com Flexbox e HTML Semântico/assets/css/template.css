@@ -1,0 +1,444 @@
+/*  #M5 aula #Projeto Site com Flexbox e HTML Semântico
+*/
+*{
+   font-family: Arial, sans-serif;
+}
+body {
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   display: flex;
+   justify-content: center;
+   height: 120px;
+}
+.container{
+   display: flex;
+   justify-content: space-between;
+   width: 990px;
+}
+
+.logo{
+   display: flex;
+   align-items: center;
+}
+.menu{
+   display: flex;
+   align-items: center;
+}
+nav ul, 
+nav li{
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+}
+nav ul{
+   display: flex;
+}
+nav a{
+   display: block;
+   padding: 15px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #727272;
+}
+nav .active a,
+nav a:hover{
+   background-color: #39aae1;
+   color: #FFF;
+}
+
+#banner{
+   display: flex;
+   justify-content: center;
+   background-image: url('../images/img1.jpg');
+   background-position: center;
+   background-size: cover; /* faz com que a imagem se adapte ao tamanho da tela */
+   height: 670px;
+}
+
+.column{ /* Permite definir propriedades para a classe container seguida da classe column */
+   display: flex;
+   flex-direction: column;   
+}
+.banner_headline{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.banner_headline h1{
+   color: #FFF;
+   font-size: 70px;
+   text-shadow: 0px 1px 0px #555;
+   padding: 0px;
+   margin: 0px;
+   max-width: 350px;
+}
+.banner_headline h2{
+   color: #FFF;
+   font-size: 21px;
+   text-shadow: 0px 1px 0px #555;
+   padding: 0px;
+   margin: 0px;
+   max-width: 350px;
+   margin-top: 30px;
+}
+.banner_options{
+   height: 210px; /* Não tem a prop. flex 1, pq tem tamanho fixo de 210px */
+   display: flex;
+}
+.banner1,
+.banner2,
+.banner3{
+   flex: 1;
+   color: #FFF;
+   padding: 20px;
+}
+.banner1{
+   background-color: #39aae1; 
+}
+.banner2{
+   background-color: #0079c7;
+}
+.banner3{
+   background-color: #2b4c99;
+}
+.banner_title{
+   font-size: 21px;
+}
+.banner3 .banner_title{
+   margin-bottom: 15px;
+}
+.banner_desc{
+   font-size: 12px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   line-height: 18px;
+}
+.banner3{
+   display: flex;
+   flex-direction: column;
+}
+.banner3 .banner_desc{
+   border-bottom: 1px dotted #FFF;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 13px;
+   margin-bottom: 10px;
+   
+}
+
+.banner_options a{
+   display: inline-block; /* inline-block para acompanhar o tamanho do texto */
+   border: 1px solid #FFF;
+   padding: 5px;
+   color: #FFF;
+   font-size: 13px;
+   text-decoration: none;
+   margin-top: 13px;
+}
+
+#geral{
+   display: flex;
+   justify-content: center;
+}
+#geral section{
+   flex: 2;
+}
+#geral aside{
+   flex: 1;
+   /* display: flex;
+   flex-direction: column; */
+}
+.widget_title{
+   margin-top: 30px;
+   margin-bottom: 20px;
+   font-weight: bold;
+}
+.widget_title_bar{
+   width: 50px;
+   height: 2px;
+   background-color: #36a9e1;
+   margin-top: 10px;
+}
+.flex{/* ao adicionar "flex" em widget_body, ele incorpora as propriedades dessa classe flex definida */
+   display: flex;
+   flex-wrap: wrap;
+}
+article{ 
+   flex: 1;
+   min-width: 300px; /* define uma largura minima, para ser utilizado com o flex-wrap */
+   margin-right: 20px;
+}
+article a{
+   text-decoration: none;
+}
+article .news_data{
+   display: flex;
+}
+article .news_posted_at{
+   background-color: #2b4c99;
+   color: #FFF;
+   font-size: 12px;
+   padding: 10px;
+   margin-right: 2px;
+}
+article .news_comments{
+   background-color: #39aae1;
+   color: #FFF;
+   font-size: 12px;
+   padding: 10px;
+}
+article .news_thumbnail{
+   margin-top: 30px;
+}
+article .news_thumbnail img{
+   width: 100%;
+   height: auto;
+}
+article .news_title{
+   margin-top: 25px;
+   margin-bottom: 25px;
+   color: #000;
+   font-size: 23px;
+}
+article .news_resume{
+   color: #5c5c5c;
+   font-size: 14px;
+   line-height: 20px;
+   margin-bottom: 30px;
+}
+
+aside .widget_body{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+aside .widget_body .Departments{
+   background-color: #39aae1;
+   height: 150px;
+   width: 150px;
+   margin-bottom: 27px;
+}
+
+aside .contato_lista{
+   display: flex;
+   flex-direction: column;
+   font-size: 15px;
+}
+aside .contato_desc{
+   margin-bottom: 10px;
+   border-bottom: 2px solid #d8d8d8;
+   padding-bottom: 30px;
+}
+aside .contato{
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   border-bottom: 2px solid  #d8d8d8;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+}
+aside .quadrado{
+   background-color: rgb(184, 196, 183);
+   height: 30px;
+   width: 30px;
+   margin-right: 10px;
+}
+aside #email, #form{
+   color: #0079c7;
+   text-decoration: none;
+}
+aside #email{
+   margin-left: 5px;
+}
+
+footer{
+   background-color: #1e1e1e;
+   display: flex;
+   justify-content: center;
+}
+.footer_menu{
+   display: flex;
+}
+.fm_1, .fm_2, .fm_3{
+   flex: 1;
+   color: #FFF;
+}
+.fm_1{
+   background-color: #39aae1; 
+}
+.fm_2{
+   background-color: #0079c7;
+}
+.fm_3{
+   background-color: #2b4c99;
+}
+.flexColumn{
+   flex-direction: column;
+}
+.footer_menu a{
+   display: block; /* Pega toda a area do quadrado */
+   text-decoration: none;
+   padding: 20px;
+   color: #fff;
+}
+.footer_area{
+   display: flex;
+}
+.footer_areaitem{
+   flex: 1;
+}
+footer .widget_title_text{
+   color: #fff;
+}
+footer .widget_body{
+   display: flex;
+   flex-direction: column;
+   font-size: 13px;
+   color: #9e9595;
+   line-height: 18px;
+}
+.widget_body .description{  
+   margin-right: 30px;
+   margin-bottom: 30px;
+}
+.widget_body .desc_contato{
+   display: flex;
+   justify-content: space-between;
+}
+.desc_contato .desc_info{
+   margin-right: 60px;
+}
+.desc_contato .info_mail{
+   color: #ffffffdc;
+   margin-right: 20px;
+}
+.socialmidia_icons{
+   display: flex;
+   margin-top: 25px;
+}
+.socialmidia_icons div{
+   height: 30px;
+   width: 30px;
+   background-color: #727272;
+   margin-right: 5px;
+}
+
+.widget_body .latest_posts a{
+   display: flex;
+   text-decoration: none;
+   align-items: baseline;
+}
+.ponto{
+   height: 7px;
+   width: 7px;
+   border-radius: 3.5px;
+   background-color: #ffffffdc;
+   margin-right: 10px;
+}
+.latest_posts_text{
+   color: #ffffffdc;
+   margin-right: 20px;
+}
+.widget_body .latest_posts_year{
+   color: #39aae1;
+   margin-left: 12px;
+   margin-bottom: 20px;
+}
+.widget_body .latest_tweets{
+   display: flex;
+   flex-direction: row;
+  
+   text-decoration: none;
+   color: inherit;
+   align-items: baseline;
+}
+.latest_tweet_post a{
+   color: #ffffffdc;
+   text-decoration: none;
+}
+
+.footer_copy{
+   border-top: 1px solid #2c2c2c;
+   height: 40px;
+   line-height: 40px; /* aqui, vai deixar o texto no meio */
+   color: #5c5c5c;
+   font-size: 12px;
+   margin-top: 30px;
+
+}
+.menuMobile{
+   display: none;
+   width: 40px;
+   height: 40px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-right: 20px;
+}
+.mm_line{
+   height: 2px;
+   background-color: #39aae1;
+}
+
+/* configurações de responsividade */
+@media (max-width:600px){
+   .banner_headline{
+      padding: 20px;
+   }
+   .banner_headline h1{
+      font-size: 55px;
+   }
+   .banner_headline h2{
+      font-size: 17px;
+   }
+   .banner_options{
+      height: auto;
+      flex-direction: column;
+   }
+   .container{
+      flex-direction: column;
+   }
+   #geral section{
+      padding: 20px;
+      margin-top: 90px; /* adicionado por mim */
+   }
+   #geral aside{
+      padding: 20px;
+   }
+   .footer_menu{
+      flex-direction: column;
+   }
+   .footer_area{
+      flex-direction: column;
+      padding: 20px;
+   }
+   .footer_copy{
+      padding-left: 20px;
+   }
+   header .container{
+      flex-direction: row;
+   }
+   nav ul{
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+   }
+   header{
+      height: auto;
+   }
+   .logo{
+      padding: 20px;
+   }
+   .menuMobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
+}

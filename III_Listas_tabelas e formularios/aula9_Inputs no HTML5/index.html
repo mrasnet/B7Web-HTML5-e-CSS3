@@ -1,0 +1,52 @@
+<!-- #M3 aula #9: Inputs no HTML5 
+
+    Formulários:
+
+    1. form = define grupo de formulario
+    2. GET = manda os dados pela URL / POST = envia internamente
+    
+    3. input        - type: text (password / email) , checkbox, radio, submit;
+    4. propriedades: name = define um nome / value = define um valor para o campo 
+    
+    5. variações do text (para browser moderno): color / date / datetime-local / time / week / month / number / range (propri: min - max)/
+    search / tel / url
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet"><!-- importa a font do google -->
+</head>
+<body>
+   <h1>Página Teste</h1>
+
+   <h2>Área de Cadastro</h2>
+   <div>
+   <!-- grupo de formulário -->
+   <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
+        <input type="text" name="nome" value="Insira o nome"/>
+        <input type="color" name="cor"/>
+        <br/><input type="date" name="data"/>
+        <br/><input type="datetime-local" name="data-hora"/><!-- Envia no padrão internacional - ano/mes/dia -->
+        <br/><input type="month" name="data-mes-ano"/><!-- apenas mês e ano -->
+        <br/><input type="week" name='semana'/>
+        <br/><input type="time" name='hora'/>
+        <br/><input type="number" name='numero'/>
+        <br/><input type="range" name='barra-de-alcance'/>
+        <br/><input type="search" name='pesquisa'/>
+        <br/><input type="tel" name='telephone'/>
+        <br/><input type="url" name='url'/>
+        
+        <!-- botão de envio -->
+        <br/><input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
+   </form>
+    </div>
+    
+   <h2>Área de Login</h2>
+   <form><!-- grupo de formulário -->
+
+   </form>
+</body>
+</html>

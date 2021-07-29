@@ -1,0 +1,24 @@
+<!-- #M6 aula #10: Autofocus
+
+    permite selecionar o cursor no campo do formulário no momento em que a página é carregada
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <form method="POST">
+        <label>Login
+            <input type="text" name="usuario" placeholder="Usuário" autofocus><!-- uso do autofocus -->
+        </label><br/>
+        <label>Senha
+            <input type="password" name="senha" placeholder="senha">
+        </label><br/>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>

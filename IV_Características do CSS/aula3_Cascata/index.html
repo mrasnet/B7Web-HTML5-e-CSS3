@@ -1,0 +1,31 @@
+<!-- #M4 aula #3: Cascata
+
+    Ordem hierárquica para definição de efeitos: CCS inline¹, CCS interno² e CCS externo³
+    A aplicação é de cima para baixo, e a ordem é:
+        1. CCS externo é aplicado
+        2. CCS interno são aplicados
+        3. CCS inline é aplicado
+    Como o CSS funciona de cima para baixo, o último aplicado (inline) é o que possuirá maior prioridade
+        
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Pagina nome</title>
+    <link rel="stylesheet" href="estilos.css"/>
+
+    <style type="text/css">
+        .container{
+            color:#0f0
+        }
+    </style> 
+</head>
+<body>
+    <h1>Título do Site</h1>
+    <div class="container" style="color: #00f;"> <!-- esse irá definir a cor -->
+        Este é um <strong>texto</strong> qualquer
+    </div>
+    <div>Algum texto qualquer</div>
+</body>
+</html>

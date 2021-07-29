@@ -1,0 +1,21 @@
+<!-- #M5 aula #4: Imagens Responsivas picture e source
+    
+    Permite alterar a imagem com base no tamanho da tela - é possível utilizar o "max" no lugar do min.
+    Muito utilizado por exemplo quando se tem um banner grande e quer introduzir uma versão menor da imagem
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <title>Título do site</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 650px)" srcset="im2.PNG" />
+        <source media="(min-width: 450px)" srcset="im3.PNG" />
+        <img src="im1.PNG" />
+    </picture>
+</body>
+</html>

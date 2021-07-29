@@ -1,0 +1,29 @@
+/*  #M5 aula #14: Função calc
+
+    Calcula o tamanho : Realiza operações entre valores independente da unidade de medida desses serem diferentes, podendo ser utilizado por 
+    diferentes propriedades.
+*/
+body{
+    margin: 0;
+}
+.container{
+    width: calc(100% - 20px); /* Aqui, nos permite ter uma largura retirando sempre 20px */
+    height: 200px;
+    background-color: #CCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

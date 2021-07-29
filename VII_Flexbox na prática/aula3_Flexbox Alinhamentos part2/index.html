@@ -1,0 +1,127 @@
+<!--  #M5 aula #2: Alinhamentos part2
+   
+    Flexbox: torna os elementos flexíveis e adaptáveis, cada um com as suas regras funcionando harmonizadamente juntos, entretanto, isso 
+    significa também que propriedades definidas em um elemento tem que possuir correspondencia com outros elementos associados.
+    Com o Flexbox se estabelece regras que funcionam harmonizadamente para todos os elementos juntos.
+    Se estabelece um elemento (container - ex.: div) o qual dentro vai conter os boxes, sendo esse responsável por controlá-las.
+
+    display: flex            - ativa o flexbox
+    flex-direction: arg      - define a direção dos boxes, tipos: row (padrão)/ row-reverse / column / column-reverse
+    flex: arg                - define o tamanho dos boxes, onde 1 é igual ao menor valor, 2 o dobro, 3 o triplo etc. Sempre com relação ao 
+    espaço do seu conteiner e demais elementos definidos (quando esses existirem).
+
+    flex-wrap: arg           - permite definir a forma como os elementos são exibidos - limitados ou não ao seu tamanho disponível no container
+    flex-flow: arg1 arg2     - permite definir ambos, flex-direction e flex-wrap
+
+    Alinhamento vertical e horizontal:
+    justify-content    - alinhamento em linha - horizontal - vai alinhar na direção que está sendo exibido (se linha, na linha / se coluna,
+        na coluna)
+    align-items        - alinhamento em coluna - vertical  - possui as mesmas propri. de justify-content - entretanto, alinha na direção 
+        contrária.
+
+    propri. flex-start = alinha onde o flex começa / flex-end = alinha onde o flex termina - existe uma relação entre o flex-direction e o 
+        justify-content, onde suas combinações de valores produzem resultados visuais diferentes
+
+        justify-content: space-around   - define espaços iguais ao redor dos elementos
+        justify-content: space-between  - define espaços iguais entre os elementos
+    
+    align-self  - permite definir um alinhamento num elemento específico diferente do definido no seu conteiner (sobrescrevendo)
+    order       - permite definir a ordem na qual o elemento é exibido - por padrão todos são 0 (ZERO), valores+ ordena após / valores- ordena antes
+
+    align-content       - com o wrap habilitado permite formatar quando elementos contidos num container descem para a linha de baixo.
+    Aqui também valem as propriedade do justify-content.
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <style type="text/css">
+
+        .container {
+            display: flex; 
+            height: 500px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #DDD;
+            margin-bottom: 10px;
+        } 
+        .container div{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(226, 26, 199, 0.884);
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div10{
+            align-self: flex-start;
+            /* Para entender como funciona a ordem aqui, ajuda se imaginar o eixo x de uma função (eixo das abscissas)*/
+            order: -1;
+        }
+        .div14{
+            align-self: flex-start;
+            order: -2;
+        }
+
+        .container2 {
+            display: flex; 
+            height: 500px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-end; /* Alinha tudo dentro do container, se usa quando se tem wrap e quer que não se perca a formatação */
+            background-color: #DDD;
+        } 
+        .container2 div{
+            width: 100px;
+            height: 100px;
+            background-color: #e21ac7e1;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="div10">10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div class="div14">14</div>
+        <div>15</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+
+</body>
+</html>

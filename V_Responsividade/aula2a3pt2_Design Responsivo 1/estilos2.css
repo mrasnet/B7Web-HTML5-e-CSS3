@@ -1,0 +1,95 @@
+/* #M5 aula #pré-aula3: Design Responsivo pt2 
+
+    Capacidade de uma aplicação, layout se adaptar ao tamanho da tela
+
+    primeira forma: o layout muda de figura com relação ao tamanho da tela
+    segunda forma:  o layout acompanha o tamanho da tela até um certo limite
+
+    ---------- SEGUNDA FORMA ----------------
+*/
+body {
+    margin: 0px;
+}
+/* logo e menu estão contidos em topo, e suas larguras foram definidas como sendo 50% da largura do topo (quando queremos ambos lado à lado),
+por isso quando precisamos modificamos apenas a largura do topo. Apenas quando um precisa vir abaixo do outro, definimos suas larguras como 100% */
+.topo {
+    /* width: 800px;   Largura fixa é para a primeira forma */
+    width: 100%; 
+    max-width: 800px; /* define um limite para que o topo não fique colado na tela, necessário comentar essa linha para visualizar a 1ª forma */
+    height: 100px;
+    margin: auto;
+}
+.logo {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #EEE;
+}
+.menu {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #DDD;
+}
+.corpo {
+    /* width: 800px; */ 
+    width: 100%; 
+    max-width: 800px; /* necessário comentar essa linha para visualizar a 1ª forma */
+    height: 200px;
+    margin: auto;
+    background-color: #CCC;
+}
+.rodape {
+    /* width: 800px; */ 
+    width: 100%; 
+    max-width: 800px; /* necessário comentar essa linha para visualizar a 1ª forma */
+    height: 100px;
+    margin: auto;
+    background-color: #DDD;
+}
+/*
+@media only screen and (min-width:500px) and (max-width:800px){
+
+    .topo {
+        width:500px;
+    }
+    .corpo {
+        width:500px;
+    }
+    .rodape {
+        width:500px;
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    .topo {
+        width: 300px;
+        height: 200px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .corpo {
+        width: 300px;
+    }
+    .rodape {
+        width: 300px;
+    }
+} */
+
+@media only screen and (max-width: 500px){
+
+        .topo {
+            height: 200px;
+        }
+        .logo {
+            width: 100%;
+        }
+        .menu {
+            width: 100%;
+        }
+}

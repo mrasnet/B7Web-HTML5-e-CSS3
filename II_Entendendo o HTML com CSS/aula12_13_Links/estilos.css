@@ -1,0 +1,25 @@
+/* #M2 aula #12 e 13: Links
+
+    1. :hover    - mouse sobre 
+    2. :visited  - se já visitado 
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.link {
+    color: green;
+    font-size: 30px;
+}
+/* Se link já foi visitado */
+.link:visited {
+    color: red;
+}
+/* hover muito utilizado para links */
+.link:hover { /* Mouse sobre */
+    color: blueviolet;
+}

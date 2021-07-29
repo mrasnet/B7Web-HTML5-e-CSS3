@@ -1,0 +1,63 @@
+<!-- #M3 aula #17 #18: Validações Nativas
+    
+    required        - torna obrigatório o preenchimento de um campo
+    minlength       - determina um número minimo de caracteres para um campo
+    maxlength       - determina um número máximo de caracteres para um campo
+
+    Para number: step   - permite interar o campo pulando com o valor especificado - ex: se 3, pula de 3 em 3 sempre. 
+    min - define um valor minimo (para campo number e date)
+    max - define um valor máximo (para campo number e date)
+
+    pattern          - permite atribui um padrão de escrita para um campo - junto de uma expressão regular (criada ou pré-pronta)
+        title - nesse caso, define um titulo a ser mostrado junto da janela de pattern quando exibida
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <form method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome:<br/>
+                <input type="text" name="name" required minlength="2" maxlength="8"/>
+            </label>
+            <label><br/>
+                Sobrenome:<br/>
+                <input type="text" name="lastname"/>
+            </label><br/>
+            <label>
+                Idade:<br/>
+                <input type="number" name="age" step="3" min="18"/>
+            </label><br/>
+            <label>
+                Data de nascimento:<br/>
+                <input type="date" name="birthdate" min="2021-05-24"/>
+            </label><br/>
+            <label>
+                Email:<br/>                  <!-- padrão para email. expressão regular - assunto avançado na programação -->
+                <input type="text" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de email"/>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label><br/>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar"/>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--  #M5 aula #13: Viewport
+    
+    viewport: permite definir por meio da tag meta a forma como o navegador irá interpretar as dimensões de visualização da página. 
+    content: primeiro conteúdo define a largura do site igual a largura da tela do dispositivo, o segundo (opcional) impede o usuário de dar 
+    zoom nos elementos do site - geralmente em sites mobiles se utiliza.
+
+    Sempre que se for fazer sites responsivos utilizar o viewport no meta
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <div class="site">
+        <div class="topo">
+            <h1>Guia Turístico</h1>
+        </div>
+        <div class="menu">
+            <div class="menuMobile">
+            <img src="menu.png" width="30" border="0"/>
+            </div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="center">
+            <h2>O Título</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula risus vitae quam rutrum accumsan. Nunc porttitor varius gravida. Nulla vitae tempor est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras aliquet orci sed orci euismod iaculis. Nullam condimentum massa luctus tortor lacinia, sed porttitor risus rutrum. Duis et sapien ex. Quisque porttitor felis et enim facilisis, molestie dictum nulla pellentesque. Sed accumsan id lacus ac aliquet. Etiam lobortis nunc eu varius accumsan. Maecenas in ex justo. In purus tellus, placerat ac interdum at, blandit sit amet sem.
+            <img src="http://www.google.com.br/google.jpg" width="100%"/>
+        </div>
+        <div class="rightside">
+
+        </div>
+        <div class="rodape"></div>
+    </div>
+</body>
+</html>

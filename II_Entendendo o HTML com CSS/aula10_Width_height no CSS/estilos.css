@@ -1,0 +1,29 @@
+/* #M2 aula #10: Width/height no CSS
+
+    1. width    - largura
+    2. height   - altura
+    3. propri:  inherit           - Herda o valor definido da tag na qual está contida
+    4. max(min) - width / height  - define um valor máximo ou mínimo para as propriedade width e height
+    * max e min sempre vão ter prioridade sobre qualquer outras difinições feitas
+
+    prop: 
+    auto - define o tamanho automático de acordo com o espaço disponível (auto-ajuste) - equivale a não definir aquela propriedade (padrão)
+
+ */
+
+body{
+  margin: 0px;
+}
+/* No caso de uma div, por padrão ela já pega toda a largura da tela mesmo que não se tenha definido um valor ao width */
+.exemplo {
+    background-color: #000;
+    /* Há diferentes tipos de valores que se pode colocar, (em porcentagem, ou pixels), ainda valores padronizados (auto) */
+    width: 100%; /* 100% da largura da tela */
+    height: 100px;
+}
+
+img{
+    width: inherit; /* Herda width de .exemplo já que img tá contida na div */
+    max-width: 50%; /* Define um valor máximo apesar de herdar tal atributo de um elemento pai. Ver também  min-width -  um valor mínimo
+    definido não permite um valor menor que esse. Num valor máximo definido não permite um valor maior que esse */
+}

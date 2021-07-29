@@ -1,0 +1,29 @@
+/*  #M5 aula #13: Função min e max
+
+    Permite definir diferentes valores, quando definimos um em porcetagem esse varia até que algum valor fixo seja o maior ou menor, no caso, 
+    irá depender de qual função está sendo usada:
+    min     - dos valores definidos aplica o menor
+    max     - dos valores definidos aplica o maior
+*/
+
+img{
+    width: min(50%, 300px); /* funciona de forma análoga com o max, entretanto, o max pega o maior valor e o min o menor valor. Nesse caso,
+    enquanto 300px for o menor a largura será 300px, porém apartir do momento que 50% corresponder a uma largura menor que 300px, 50% da largura
+    disponível será aplicada. */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

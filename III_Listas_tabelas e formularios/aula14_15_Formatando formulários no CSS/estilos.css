@@ -1,0 +1,70 @@
+/* #M3 aula #14 e 15: Formatando formulários no CSS
+
+    outline 0           - Remove a borda azul que vem por padrão no Google Chrome
+    resize: none        - impede de que o usuário estique a caixa de texto que por padrão permite
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+
+div {
+    width: 700px;
+    background-color: #ddfa9a;
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: 1px solid #423f3f;   
+}
+/* Como os itens do formulário estão contidos dentro do label, é possível definir configurações nesse label e ter um resultado visual em 
+seus itens contidos */
+label {
+    /* display: inline;  - por padrão o label vem configurado dessa forma */
+    display: block;  /* transforma a exibição em bloco, como se fosse uma div, ficará um abaixo do outro */
+    margin-bottom: 15px;
+}
+/* Padding para checkbox não surte efeito, pq o ideal tanto para ele como para o radiobotton é que sejam o padrão do navegador. No caso da 
+largura (width) influencia - surte efeito */
+input { 
+    padding: 10px;
+    /* width: 500px; */
+}
+/* Quando temos que realizar modificações em elementos do html, podemos usar: ids ou classes, nome da tag, ou para inputs do tipo text e 
+password é possivel fazer da seguinte forma */
+input[type=text], textarea, select {/* Resolvendo assim, o problema acima, se caso quisessemos definir uma largura sem que influenciasse o
+    checkbox */
+    padding: 10px;
+    width: 500px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    outline: 0; /* Remove a borda azul que vem por padrão no Google Chrome */
+    margin-top: 5px;
+}
+
+textarea {
+    height: 150px; /* Como queremos definir altura só para o textarea definimos separadamente */
+    resize: none; /* impede de que o usuário estique a caixa de texto que por padrão permite */
+}
+/* Aguns sites fazem a seguinte configuração pq preferem que seus usuários não tenham que ler seus termos de serviço */
+.termoslink {
+    color: #000;
+    text-decoration: none;
+}
+.termoslink:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+}
+button:hover {
+    background-color: #DDD;
+}

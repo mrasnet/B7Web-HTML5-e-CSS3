@@ -1,0 +1,149 @@
+<!--  #M5 aula #2: Alinhamentos part1
+   
+    Flexbox: torna os elementos flexíveis e adaptáveis, cada um com as suas regras funcionando harmonizadamente juntos, entretanto, isso 
+    significa também que propriedades definidas em um elemento tem que possuir correspondencia com outros elementos associados.
+    Com o Flexbox se estabelece regras que funcionam harmonizadamente para todos os elementos juntos.
+    Se estabelece um elemento (container - ex.: div) o qual dentro vai conter os boxes, sendo esse responsável por controlá-las.
+
+    display: flex            - ativa o flexbox
+    flex-direction: arg      - define a direção dos boxes, tipos: row (padrão)/ row-reverse / column / column-reverse
+    flex: arg                - define o tamanho dos boxes, onde 1 é igual ao menor valor, 2 o dobro, 3 o triplo etc. Sempre com relação ao 
+    espaço do seu conteiner e demais elementos definidos (quando esses existirem).
+    flex-wrap: arg           - permite definir a forma como os elementos são exibidos - limitados ou não ao seu tamanho disponível no container
+    flex-flow: arg1 arg2     - permite definir ambos, flex-direction e flex-wrap
+
+    Alinhamento vertical e horizontal:
+    justify-content    - alinhamento em linha - horizontal - vai alinhar na direção que está sendo exibido (se linha, na linha / se coluna,
+        na coluna)
+    align-items        - alinhamento em coluna - vertical  - possui as mesmas propri. de justify-content - entretanto, alinha na direção 
+        contrária.
+
+    propri. flex-start = alinha onde o flex começa / flex-end = alinha onde o flex termina - existe uma relação entre o flex-direction e o 
+        justify-content, onde suas combinações de valores produzem resultados visuais diferentes
+
+        justify-content: space-around   - define espaços iguais entre os elementos
+        justify-content: space-between  - define espaços iguais entre os elementos do meio
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <style type="text/css">
+
+        .container {
+            display: flex; /* ativa o flexbox */
+            background-color: #DDD;
+            /* flex-wrap: wrap; */ /* habilita o wrap - valor padrão: nowrap */
+            /* flex-direction e flex-wrap numa propriedade só: flex-flow */
+            flex-flow: row-reverse nowrap;/* usar nowrap só faz sentindo quando se tem rows */
+        } 
+        .container div{
+            background-color: #ff7300;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            /* é possível definir valores fixos, porém não é possível aplicar um valor acima do limite daquele container. 
+            Existe a propriedade wrap no flexbox com valor padrão nowrap, por isso não permite que os itens vá para a linha de baixo */
+            width: 200px; /* os itens não chegam a ter 200px de width devido a propri. nowrap não permitir */
+        }
+        .container2 {
+            display: flex;
+            background-color: #DDD;
+            /* justifica os elementos dentro do container centralizados - justifica em linha - utiliza se tiver flex-direction row (padrão)*/
+            justify-content: center;
+            /* Alinhamento centralizado em coluna */
+            align-items: center;
+            margin: 10px;
+            height: 300px;
+        }
+        .container2 div{
+            background-color: #ff7300;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            width: 100px;
+            height: 100px; /* queremos um quadrado - sem essa definição o tamanho seria herdado de container2 */
+        }
+        .container3 {
+            display: flex;
+            height: 300px;
+            flex-direction: column;
+            align-items: center;
+            background-color: #DDD;
+            margin: 10px;
+        }
+        .container4 {
+            display: flex;
+            height: 300px;
+            flex-direction: row;
+            justify-content: flex-end;
+            /* justify-content: space-around; */  
+            /* justify-content: space-between; */ 
+            background-color: #DDD;
+            margin: 10px;
+        }
+        .container5 {
+            display: flex;
+            height: 300px;
+            flex-direction: row;
+            /* flex-end em justify-content alinha ao final horizontalmente, e em align-items, alinha na vertical */
+            justify-content: flex-end;
+            align-items: flex-end; 
+            /* Alinha centralizado horizontalmente e alinha ao final verticalmente */
+           /* justify-content: center;
+              align-items: flex-end;  */
+            background-color: #DDD;
+            margin: 10px;
+        }
+        .container3 div, .container4 div, .container5 div{
+            width: 100px;
+            height: 100px;
+            background-color: #ff7300;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+</html>

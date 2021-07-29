@@ -1,0 +1,21 @@
+/*  #M4 aula #8: O inherit
+
+    Uma vez que definições mais gerais são definidas de seus containers para seus elementos naturalmente, o inherit é mais utilizado para 
+    definições num elemento mais específico. Assim o inherit permite forçar herança.
+*/
+body{
+    margin: 0;
+}
+
+.box{
+    font-size: 20px;
+    color: blue;
+}
+h1{
+    font-size: 30px;
+    color: red;
+}
+.box h1{
+    font-size: inherit;
+    color: inherit;
+}

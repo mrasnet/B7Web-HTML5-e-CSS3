@@ -1,0 +1,114 @@
+<!--    #M8 aula #2: Exercício: Um formulário de pesquisa
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no"/><!-- tag meta viewport-->
+    <title>Cadastro Usuário</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Cadastro do Usuário</h1>
+    </header>
+    
+    <section>
+        <form action="" method="GET">
+            <fieldset>
+                <legend class="LegendaPrincipal">Cadastro Usuário</legend> 
+                
+                <fieldset class="fieldsetDadosPessoais">
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <label>Nome:<br>
+                            <input class="smalltext" type="text" name="nome" autofocus required/>
+                        </label><br>
+                        <label>Sobrenome:<br>
+                            <input class="smalltext" type="text" name="sobrenome" required/>
+                        </label><br>
+                        <label>Setor de operação<br>
+                            <select name="setor">
+                                <option> -- // -- </option>
+                                <option value="adm">Setor Administrativo</option>
+                                <option value="rh">Setor de RH</option>
+                                <option value="producao">Setor de Produção</option>
+                                <option value="ti">Setor de Tecnologia</option>
+                            </select>
+                        </label><br>
+                        <label>Data de Nascimento:
+                            <input type="date" name="data_nasc" required/>
+                        </label>
+                    </div>
+                        
+                    <div>
+                        <label>Local de nascimento:
+                            <input class="bigtext" type="text" name="local_nasc" required/>
+                        </label><br>
+                        <label>Local em que reside:
+                            <input class="bigtext" type="text" name="local_reside" required/>
+                        </label><br>
+                        <label>Instituição vinculada:
+                            <input class="bigtext" type="text" name="inst_vinculada"/>
+                        </label><br>
+                        <label>CPF:<br>
+                            <input class="bigtext" type="text" name="CPF" placeholder="000.000.000-00" required/>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldsetDadosConta">
+                    <legend>Dados da conta</legend>
+                    <div>
+                        <label>E-mail:<br>
+                            <input type="email" name="email" required/>
+                        </label><br>
+                        <label>Login:<br>
+                            <input class="smalltext" type="text" name="login" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Senha:<br>
+                            <input type="password" name="senha" required/>
+                        </label><br>
+                        <label>Confirmar senha:<br>
+                            <input type="password" name="senha" required/>
+                        </label>
+                    </div>
+                </fieldset>
+                <button>Cadastrar</button>
+
+            </fieldset>
+        </form>
+
+        <form action="" method="get">
+            <fieldset class="fieldsetLogin">
+                <legend  class="LegendaPrincipal">Fazer login</legend>
+                    <label>Login:
+                        <input class="smalltext" type="text" name="login" required/>
+                    </label><br>
+                    <label>Senha:
+                        <input type="password" name="senha" required/>
+                    </label><br>
+                    <label>manter-me conectado
+                        <input type="checkbox" name="manterLogado"/>
+                    </label><br>
+                    
+                    <a href="">esqueci meu login ou senha</a>
+            </fieldset>
+
+            <button>Logar</button>
+        </form>
+    </section>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>

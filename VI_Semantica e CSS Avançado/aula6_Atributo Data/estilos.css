@@ -1,0 +1,13 @@
+/*  #M6 aula #6: Atributo Data 
+
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    font-size: 17px;
+    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+}
+

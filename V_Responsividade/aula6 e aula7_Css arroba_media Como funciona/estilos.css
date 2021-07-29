@@ -1,0 +1,70 @@
+/*  #M5 aula #6 e #7: Css @media Como funciona 
+
+    Usamos o @media para definirmos propriedades com base em condições. O @media é o que permite a responsividade;
+    
+    @media (condição) { } ou @media (condição) and (condição){ }...     - Permite mudar o aspecto visual dos elementos de acordo com condições 
+    no CSS
+    @media only print       - define propriedades para impressão, muito utilizado para retirar coisas na impressão
+    @media only screen      - define propriedades apenas para a tela
+    @media all              - Aplica para todas as condições
+*/
+body{
+    background-color: #fff;
+}
+h1{
+    color: #f0f;
+    font-size: 80px;
+}
+table{
+    width: 100%;
+}
+table, td{
+    border: 1px solid #000;
+}
+
+@media (max-width: 600px){/* De 600px pra baixo */
+    body{
+        background-color: #f0f;
+    }
+    h1{
+        color: #fff;
+    }
+}
+@media (min-width: 1000px) { /* De 1000px para cima */
+    body{
+        background-color: rgb(166, 255, 0);
+    }
+    h1{
+        color: rgb(19, 10, 95);
+    }  
+}
+@media (min-width: 700px) and (max-width: 999px){ /* entre 700px e 999px (De 700 pra cima e de 999px para baixo) */
+    body{
+        background-color: rgb(19, 153, 158);
+    }
+    h1{
+        color: rgb(77, 95, 10);
+    }
+}
+
+@media only print{ /* define propriedades para impressão, muito utilizado para retirar coisas na impressão */
+    h1{
+        display: none;   
+    }
+    table{
+        width: 50%;
+    }
+    table, td{
+        border: 1px dotted #000;
+    }
+}
+@media only screen{ /* define propriedades apenas para a tela */
+    h2{
+        display: none;
+    }
+}
+@media all{  /* Aplica para todas as condições */
+    html{
+        font-family: sans-serif;
+    }
+}

@@ -1,0 +1,51 @@
+<!-- #M2 aula #12 e 13: Links 
+
+    href        - link / id de um elemento interno / diretório de pasta
+    target      - _blank - usado para links externos
+
+    Em links internos - dentro da mesma página, href faz referencia ao id do elemento
+
+    tag a - ancora -  propri: 
+    title - titulo 
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <h1>Página teste</h1>
+    <a href="paginas/login.html">Fazer login</a>
+    <br/>
+
+     <!-- Se usa o target blank quando quer exibir um link externo e não quer que o usuário abandone a página do site -->
+    <h1>Ir para a página do Google</h1>
+    <a href="http://google.com" target="_blank" title="página do google">
+        <img src="http://google.com/logos/google.jpg"/><!-- imagem dentro de um link -->
+    </a>
+    <br/>
+
+    <!-- link interno - dentro da mesma página, href faz referencia ao id do elemento -->
+    <a href="#area6" class="link">Ir para Conteúdo 6</a>
+
+    <h2 id="area1">Conteúdo 1</h1>
+    <img src="http://google.com/logos/google.jpg"/>
+
+    <h2 id="area2">Conteúdo 2</h1>
+    <img src="http://google.com/logos/google.jpg"/>
+
+    <h2 id="area3">Conteúdo 3</h1>
+    <img src="http://google.com/logos/google.jpg"/>
+
+    <h2 id="area4"> Conteúdo 4</h1>
+    <img src="http://google.com/logos/google.jpg"/>
+
+    <h2 id="area5">Conteúdo 5</h1>
+    <img src="http://google.com/logos/google.jpg"/>
+    
+    <h2 id="area6">Conteúdo 6</h1>
+    <img src="http://google.com/logos/google.jpg"/>
+</body>
+</html>

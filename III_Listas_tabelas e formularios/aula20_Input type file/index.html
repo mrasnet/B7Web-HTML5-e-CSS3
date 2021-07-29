@@ -1,0 +1,56 @@
+<!-- #M3 aula #20: Input type file
+    
+    Input type file:     campo de envio para arquivos junto de formulários
+    file                - define um campo de envio de arquivo
+        accept - filtra para o tipo de arquivo com base na extensão informada
+            image/*             - filtra imagens para envio
+            application/pdf     - filtra apenas pdf
+    enctype             - tipo de encriptação para envio de arquivos - obrigatório;
+        multipart/form-data     - arquivos, texto ou não, etc. - é convertido em bytes pelo o navegador para envio
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Página de teste</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <!-- Arquivos não são enviados com método GET -->
+    <form method="POST" enctype="multipart/form-data"><!-- enctype é obrigatório para enviou de arquivos em formulários -->
+        <input type="hidden" name="country" value="BR"/>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome:<br/>
+                <input type="text" name="name"/>
+            </label>
+            <label><br/>
+                Sobrenome:<br/>
+                <input type="text" name="lastname"/>
+            </label><br/>
+            <label>
+                Foto:<br/>
+                <input type="file" name="photo" accept="image/*"/>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label><br/>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar"/>
+        
+    </form>
+</body>
+</html>

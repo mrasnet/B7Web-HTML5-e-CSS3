@@ -1,0 +1,25 @@
+/* #M6 aula #10: Autofocus
+
+    permite selecionar o cursor no campo do formulário no momento em que a página é carregada
+*/
+body {
+   margin: 0px;
+   background-color: rgb(96, 168, 28);
+   
+}
+form {
+    height: 200px;
+    width: 400px;
+    background-color: rgb(184, 184, 184);
+    margin-left: 500px;
+    margin-top: 150px;
+    padding-top: 15px;
+    border: 1px solid #000;
+}
+
+input, label{
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+

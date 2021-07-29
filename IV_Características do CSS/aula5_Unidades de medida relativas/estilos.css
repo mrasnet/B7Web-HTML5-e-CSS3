@@ -1,0 +1,25 @@
+/*  #M4 aula #5: Unidades de medida relativa (fonte)
+
+    Unidades de medidas que irão mudar de tamanho com base nos elementos da própria página
+
+    em      - "1 em" corresponde ao valor definido na classe pai, "2 em"... em diante, é esse valor multiplicado pelo o inteiro definido
+    rem     - evolução do "em", entretanto possui a diferença em que os elementos definidos com rem relacionam-se diretamente com o elemento 
+    root (com o valor definido no primeiro elemento da estrutura).
+        O valor de referencia é único para todos que dele desejam usar com o rem - muito útil para responsividade
+        Quando não se define um valor num elemento root, o rem é definido pelo o valor padrão, geralmente o padrão do html, 16px.
+*/
+body{
+    font-size: 20px;
+}
+h1{
+    font-size: 3em; /* aqui teremos 20*3=60 */
+}
+.box{
+    font-size: 2em;  /* aqui teremos 20*2=40 */
+}
+/* aqui teremos 40*10=400, pq o seu container possui o valor 40, o efeito é aplicado em cascata. Seu superior mais próximo é o box */
+.box-interno{
+    width: 10em;     
+    height: 10em;
+    background-color: #999;
+}
