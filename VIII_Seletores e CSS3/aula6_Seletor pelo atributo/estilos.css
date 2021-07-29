@@ -1,0 +1,30 @@
+/*  #M8 aula #6: Seletor pelo atributo     
+
+    Selecionando um item pelo o seu atributo:
+
+    Podemos selecionar um item que possui um atributo ou que possui determinado valor para um atributo
+
+    [atributo]              - selecionando apenas o nome do atributo
+    ex.:   input[atr]       - selecionando o item que possui determinado atributo
+    .classe[atr]            - selecionando uma classe que possui determinado atributo
+    #id[atr]                - selecionando o id de um item que possui determinado atributo - talvez desnecessário*
+
+    ex.: [type=text]        - selecionando um item que possui um valor pré definido para um determinado atributo
+    ex.: [name="usuario"]   - selecionando um item que possui um valor definido para um determinado atributo
+*/
+input, a{
+    display: block;
+}
+
+input[required]{
+    background-color: rgb(130, 219, 190);
+    font-size: 18px;
+}
+
+input[name="usuario"]{
+    color: #fff;
+}
+
+[type=password]{
+    color: rgb(108, 158, 50);
+}
