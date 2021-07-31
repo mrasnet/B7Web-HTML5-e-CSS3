@@ -1,0 +1,24 @@
+/*  #M8 aula #10: Seletor de Primeiro e Último Elemento
+
+    A utilidade disso na prática consiste principalmente na utilização de efeitos para menus, tabelas etc.
+
+    tag_name:first-child        - referencia para o primeiro item que seja da tag passada  - ' : ' porque aqui estamos referenciando o próprio
+        elemento
+    tag_name:last-child        - referencia para o último item que seja da tag passada   
+*/
+
+div{
+    background-color: #8a2be2;
+    width: 100px;
+    height: 100px;
+}
+
+div:first-child{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+div:last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

@@ -1,0 +1,12 @@
+/*   #M8 aula #11: Seletor Negativo
+
+    Com o seletor negativo selecionamos tudo menos o que a gente especificar
+
+    :not(tag_name)          - vai incluir o body ou demais containers
+    body :not(tag_name)     - especificando dessa forma vai selecionar tudo dentro de body menos o especificado - mesma lógica para demais
+        containers
+*/
+
+body :not(p){
+    background-color: #f00;
+}

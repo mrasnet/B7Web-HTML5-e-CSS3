@@ -1,0 +1,22 @@
+/*  #M8 aula #9: Seletor de Primeira letra e Primeira Linha
+
+
+    tag-name::first-letter      - vai seleciona a primeira letra do conteúdo contido no elemento - tem que ser ' :: ' porque agora estamos nos 
+    referindo ao conteúdo de um elemento e não mais ao elemento em si - oq difere do ' : ' utilizado com 'hover' por exemplo.
+
+    tag-name::first-line        - vai selecionar a primeira linha do conteúdo contido no elemento
+*/
+body{
+    margin: 30px;
+}
+
+p::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}
+p::first-line{
+    background-color: rgb(181, 199, 100);
+    color: #fff;
+    font-size: 23px;
+    padding: 10px; /* talvez não funcione para certas propriedades - por motivos obvious, já que padding compreende todo o conteúdo */
+}
