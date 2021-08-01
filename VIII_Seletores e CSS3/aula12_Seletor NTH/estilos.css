@@ -1,0 +1,20 @@
+/*  #M8 aula #12: Seletor NTH
+
+    Dado certa ordem de itens selecionar o item que especificarmos - selecionar um item especifico independente de ser o primeiro, último,
+    ou estar no 'meio' etc. 
+
+    Iremos utilizar um seletor NTH - que também possui algumas variações:
+
+    tag_name:nth-child(i)           - por padrão seleciona na ordem top-down - no parenteses passamos o 'indice' que começa sempre do 1
+    tag_name:nth-last-child(i)      - seleciona com base na ordem inversa, de baixo para cima - menos usado
+
+    Um exemplo de utilização desse recurso seria caso precisássemos adicionar icones nos itens de um menu.
+*/
+
+div:nth-child(2){
+    background-color: #f00;
+}
+
+div:nth-last-child(2){
+    background-color: #0f0;
+}
