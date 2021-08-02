@@ -1,0 +1,46 @@
+/*  #M8 aula #13: BeforeAfter  
+
+    Adicionando elementos html via CSS - Um dos seletores mais utilizados no mundo do CSS avançado - oferece uma gama de possibilidades imensa:
+
+    tag_name::before{ content: "arg"}        - adiciona o elemento após a tag informada
+    tag_name::after{ content: "arg"}         - adiciona o elemento antes da tag informada
+
+    Como os elementos são definidos via CSS, seus conteúdo não permitem ser selecionados pelo o cursor
+*/
+
+body{
+    text-align: center;
+    margin: 0;
+}
+
+span::before{
+    content: "->";
+    background-color: rgb(153, 0, 255);
+    border: 1px solid #000;
+    padding: 5px;
+    color: #fff;
+}
+span::after{
+    content: "<-";
+    background-color: rgb(153, 0, 255);
+    border: 1px solid #000;
+    padding: 5px;
+    color: #fff;
+}
+
+div{
+    background-color: #0f0;
+    padding: 20px;
+    margin-top: 30px;
+}
+/* Queremos um quadrado sem conteúdo porém apenas definir sem nada não é suficiente porque apesar do objeto ter sido criado, ele não possui um
+display correto - quando o elemento é inline apenas colocar um tamanho não adianta. Para fazer aparecer sem precisar colocar conteúdo: 
+content vazio e 'display: block', ou nesse caso aqui, 'display: inline-block' 
+*/
+div::before{
+    content: "";
+    display: inline-block;
+    background-color: rgb(255, 0, 98);
+    width: 20px;
+    height: 20px;
+}

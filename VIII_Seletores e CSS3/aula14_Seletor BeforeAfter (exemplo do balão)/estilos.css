@@ -1,0 +1,48 @@
+/*  #M8 aula #14: Seletor BeforeAfter (exemplo do balão)  
+
+    Adicionando elementos html via CSS - Um dos seletores mais utilizados no mundo do CSS avançado - oferece uma gama de possibilidades imensa:
+
+    tag_name::before{ content: "arg" }        - adiciona o elemento após a tag informada
+    tag_name::after{ content: "arg" }         - adiciona o elemento antes da tag informada
+
+    Como os elementos são definidos via CSS, seus conteúdos não permitem ser selecionados pelo o cursor.
+    BeforeAfter é bastante utilizado para fazer animações e efeitos avançados - Para elementos acima ou à esquerda é usado o before, e para 
+    elementos à direita ou abaixo, o after.
+*/
+
+.balao, .balao2{
+    background-color: #00f;
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after{
+    content: '';
+    /*
+    width: 20px;
+    height: 20px;  
+    background-color: #00f;     - temos que comentar essa parte para aplicar o efeito de triangulo na linha 33 */
+    display: block;
+    position: absolute;/* Como não queremos o quadrado fazendo parte do conteúdo usamos posição absoluta - vai fica no final do conteúdo */
+    margin-top: 20px; /* Damos um margem do tamanho da altura para vir para baixo na altura correta */
+
+    /* Até esse ponto temos um quadrado, porém queremos uma seta/triangulo - o truque consiste em utilizar bordas:
+        20px porque vai ser o tamanho do triangulo - para gerar um triangulo em CSS temos como fazer através de bordas e combinações de cores
+    */    
+    border: 20px solid;
+    border-color: #00f transparent transparent transparent; /* A cor iremos especificar para cada uma das bordas - aplique cores diferentes
+    para entender como funciona o efeito - para o efeito que queremos necessitamos definir cor para a borda de cima e transparente para as
+    demais */
+}
+
+.balao2::after{
+    content: '';
+    display: inline-block;/* para jogar para o lado direito - ao final */
+    position: absolute;
+    margin-left: 20px;
+    top: 25px; 
+    border: 20px solid;
+    border-color: transparent transparent transparent #00f;
+}
