@@ -1,0 +1,36 @@
+/*    #M8 aula #19: Estilizar o placeholder  
+
+    Modificar/estilizar o placeholder é geralmente algo que muitos desenvolvedores quebram muito a cabeça tentando fazer, e acabam não 
+    conseguindo, com isso, realizam adaptação do layout para conseguir fazer funcionar dessa forma. 
+
+    Alterações das configurações do placeholder: para isso vamos ter que alterar o conteudo dentro do input - e não o input - assim sendo
+    necessário definir separadamente num bloco especifico.
+
+    OBS: Essa forma de selecionar o placeholder modificou muito durante a história dos navegadores. Devido a isso precisamos saber como funciona
+    em cada versão do navegador - a que utilizamos é a mais atual e que funciona em todos os navegadores modernos.
+
+    *Contudo devemos saber como funciona em várias outras versões do navegador: 
+
+    ex.: .input::-webkit-input-placeholder         - nos navegadores que utilizam WebKit - o próprio chrome, blink, Microsoft Edge.
+    ex.: .input:-moz-placeholder                   - para o firefox da versão 4 até a versão 18
+    ex.: .input::-moz-placeholder                  - para as versões do firefox 19 em diante
+    ex.: .input:-ms-input-placeholder              - para as versões do IE 10 e 11
+    ex.: .input::-ms-input-placeholder             - para o Microsoft Edge
+
+    ex.: .input::placeholder                       - para todos os navegadores modernos
+
+    Podemos usar combinações desses - mais de um - afim de assegurarmos que as definições que queremos funcionem para navegadores mais antigos.
+    *Pode mesmo assim, não funcionar em versões muito antigas.
+*/
+
+.input{
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+    color: rgb(75, 73, 75);
+}
+
+.input::placeholder{/* podemos modificar várias propriedades */
+    color: blueviolet;
+}

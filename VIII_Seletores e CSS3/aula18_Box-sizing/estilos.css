@@ -1,0 +1,29 @@
+/*  #M8 aula #18: Box-sizing
+
+    Box-sizing surgiu como uma solução para um problema muito frequente que muitos desenvolvedores enfrentavam. Após definir as dimensões de um
+    elemento, ao definir padding e border para esse, seu conteúdo final acaba por ficar maior do que o planejado fazendo quebrar o espaço 
+    definido num container.
+
+    Box-sizing recebe dois valores principais: 
+
+    box-sizing: content-box    - o tamanho do elemento será correspondente ao tamanho do conteúdo (padrão) - irá somar ao conteúdo padding e 
+    border, resultando numa dimensão final maior que a dimensão definida no heigth e width inicialmente.
+
+    box-sizing: border-box     - o tamanho do elemento será correspondente ao tamanho do conteúdo considerando padding e border - não considera
+    margin, pois margin é espaço externo - dessa forma diminui o conteúdo para que valores definidos no padding e border preencham as dimensões
+    definidas pro height e width.
+*/
+
+*{/* prática comum para aplicar 'border-box' para todos os elementos */
+    box-sizing: border-box;
+}
+
+div{
+    font-size: 18px;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    border: 10px solid #0f0;
+    box-sizing: content-box; /* mas ainda se quisermos que um elemento especifico seja 'content-box' podemos definir para esse especifico */
+}
