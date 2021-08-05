@@ -1,0 +1,21 @@
+/*  #M8 aula #15: RGBA
+
+    Definir cor com transparencia - muito utilizado para fazer modal em páginas
+*/
+body{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+div{
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 40px;
+    font-size: 45px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}

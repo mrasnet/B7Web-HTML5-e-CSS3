@@ -1,0 +1,31 @@
+/*  #M8 aula #17: Transform rotate skew
+
+    Com esse item conseguimos fazer vários efeitos interessantes, seja em texto ou elementos como div's etc. - qualquer elemento.
+    Bastante utilizado para galeria de fotos, jogos também.
+
+    Podemos usar vários tipos de efeitos diferentes - são na verdade efeitos geométricos: 
+    
+    *podemos aumentar/diminuir a escala de um item sem necessariamente aumentar/diminuir o tamanho dele;
+    *podemos rotacionar um objeto tanto 2D quanto 3D;
+    *podemos distorcer um objeto de várias formas diferentes.
+
+    Rotate é o item mais utilizado do Transform - visualizar a sugestões do plugin para ver todas as opções - se utilizarmos inserindo apenas
+    um valor, estaremos especificando o angulo de rotação do elemento - ex.: 30deg (valor em graus) - usar o rotate ou 'rotateZ' dá no mesmo. 
+
+    Skew serve para distorcer o elemento verticalmente, horizontalmente, ou em ambos - distorce em graus
+
+    Além desses, temos outros, porém pouco utilizados.
+*/
+body{
+    margin: 100px;
+}
+div{
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    font-size: 22px;
+    /* transform: rotate(30deg); descomente para visualizar separadamente */
+    transform: skewX(-20deg); 
+    transform: skewY(10deg); /* ou skew(-20deg, 10deg) */
+}

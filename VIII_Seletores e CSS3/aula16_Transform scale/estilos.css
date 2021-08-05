@@ -1,0 +1,33 @@
+/*    #M8 aula #16: Transform
+
+    Com esse item conseguimos fazer vários efeitos interessantes, seja em texto ou elementos como div's etc. - qualquer elemento.
+    Bastante utilizado para galeria de fotos, jogos também.
+
+    Podemos usar vários tipos de efeitos diferentes - são na verdade efeitos geométricos: 
+    
+    *podemos aumentar/diminuir a escala de um item sem necessariamente aumentar/diminuir o tamanho dele;
+    *podemos rotacionar um objeto tanto 2D quanto 3D;
+    *podemos distorcer um objeto de várias formas diferentes.
+
+    transform: scale(arg)     - permite redimensionar um objeto de forma proporcional definindo um valor: 1 (padrão - não altera em nada), 
+    0.5 - metade, 1.1 - aumento de 10%, 2 - dobro do tamanho original, etc. Há outras opções de scale, sendo possível visualizar através das 
+    sugestões do plugin.
+
+    Informando dois valores no scale podemos redimensionar com distorções ou de forma desproporcional - distorce inclusive o conteúdo desse:
+    ex.: transform: scale(2, 0.5)    - dessa forma estamos definindo que o width aumentará o dobro e o heigth será diminuido pela a metade.
+
+    Para definir especificamente:
+    transform: scaleY(arg)              - define verticalmente
+    transform: scaleX(arg)              - define horizontalmente
+
+*/
+
+div{
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    font-size: 22px;
+    transform: scale(2,1);
+}
+
