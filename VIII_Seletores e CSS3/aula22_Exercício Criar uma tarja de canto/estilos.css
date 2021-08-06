@@ -1,0 +1,35 @@
+/*  #M8 aula #22: Exercício: Criar uma tarja de canto
+
+*/
+
+body{
+    margin: 0;
+}
+
+#tarja{
+    padding: 10px 40px 10px;
+    text-shadow: 1px 0px #000;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgb(180, 48, 48);
+    color: #fff;
+    align-items: center;
+    transform: rotate(-45deg);
+    top: 100px;
+    left: -100px;
+    position: absolute;
+    box-shadow: 0px 0px 8px #111;
+    border: 3px dashed #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div:nth-child(1){
+    font-size: 33px;
+}
+div:nth-child(2){
+    font-size: 27px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}

@@ -1,0 +1,44 @@
+/*    #M8 aula #20: Exercício Criar uma tabela zebra 
+    
+    criar uma tabela com o recurso :nth-child(even)
+*/
+body{
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+}
+
+h1{
+    background-color: #2d883c;
+    padding: 4px;
+    padding-left: 8px;
+    margin: 0;
+}
+table{
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+td, th{
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+th{
+    background-color: #2d883c;
+}
+tr{
+    background-color: #3aa39a;
+}
+
+tbody tr:nth-child(even){
+    background-color: #41b8ae;
+}
+tbody tr:hover{
+    color: #3fb4ab;
+    background-color: #184440;
+}
