@@ -1,0 +1,37 @@
+/*  #M11 aula #3: Trabalhando com Gaps
+
+    Gap     - separação entre um item e outro - quando definimos o gap, estamos definindo o espaço entre as divisões:
+
+    grid-column-gap: 10px       - para definir na coluna
+    grid-row-gap: 10px          - para definir na linha
+    grid-gap: 10px 30px         - para definirmos ambos com valores diferentes se quisermos
+    grid-gap: 10px              - para definirmos para ambos com um mesmo valor
+
+    Com as novas atualizações, os editores de código podem indicar que o prefixo 'grid', como em 'grid-gap' é um comando obsoleto, isso porque
+    atualmente com as novas versões o prefixo foi removido, entretanto devido o fato de alguns navegadores não estarem atualizados com relação
+    a isso, iremos utilizar com o prefixo, o que não trará problemas já que as versões mais novas de navegadores conseguem interpretar o comando
+    da mesma forma.
+
+    Então, o comando ex.: 'gap: 10px' é um comando válido, porém iremos utilizar quando precisarmos o ex.: 'grid-gap: 10px' da mesma forma.
+    A questão do prefixo, envolve todos os comandos com o prefixo 'grid' mostrados aqui.
+*/
+
+.container{
+    /* Temos outros valores opções como: grid-inline, 'subgrid' , mas por enquanto vamos com 'grid' apenas. Realizar apenas essa definição por 
+    si só, não trará mudanças visíveis */
+    display: grid;
+    /* Aqui, definimos que teremos um grid com 3 colunas - entretanto o '3' definido na função, não necessariamente significa isso */
+    grid-template-columns: repeat(3, 1fr);
+    /* Podemos definir na columa somente, ou na linha somente */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
