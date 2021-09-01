@@ -1,0 +1,35 @@
+/*  #M11 aula #8: Posicionamento no Grid
+
+    Mais especificamente 'posicionamento no container'.
+
+    padrão: 'start' - lado esquerdo / end - lado direito / center - centro do container;
+    stretch - obriga a aumentar para o espaço disponível da área - se tiver com tamanho fixo não surtirá efeito;
+    space-around - no caso se utilizando gap irá quebrá-lo / space-between - espaço entre
+
+    Basicamente são os mesmo que utilizamos no flexbox para formatação.
+
+    Geralmente não iremos definir tamanho para nossos containers - a não ser que seja necessário - iremos monta-los flexíveis com tamanhos 
+    flexíveis.
+*/
+
+.container{
+    height: 800px;/* Definimos altura aqui só para o entendimento do conteúdo */
+    background-color: #CCC;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 100px;
+    justify-content: center; 
+    align-items: center;/* Talvez para esse caso, seja necessário entender melhor as relações do Grid - Em suma, pega cada item e centraliza ele
+    com relação ao seu espaço e não todos com relação ao container. Se colocarmos um stretch, torna o efeito que seria de tomar todo o espaço 
+    disponível para cada item. */
+    align-content: center;/* Aqui, irá alinhas o TODO em coluna */
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}

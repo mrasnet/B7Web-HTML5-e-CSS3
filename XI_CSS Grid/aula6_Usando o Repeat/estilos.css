@@ -1,0 +1,39 @@
+/*  #M11 aula #6: Usando o Repeat
+
+    Será um bom aliado nos processos de construções de layouts pois nos permitirá diminuir bastante os códigos que iremos criar.
+
+    repeat(arg1, arg2)      - em síntese, são dois valores que informamos - pode haver mais - Esse comando basicamente vai repetir o que
+    passamos como argumento.
+
+    ex.:
+    'grid-template-columns: repeat(3, 100px)'               - irá repetir 3 vezes o 100px - três colunas com 100px de largura;
+    'grid-template-columns: repeat(3, 1fr) 200px'           - 4 colunas - teremos 3 colunas com largura '1fr' e uma coluna de 200px;
+    'grid-template-columns: 100px repeat(3, 1fr) 200px'     - 5 colunas - teremos 1 coluna de 100px, 3 colunas com largura '1fr' e uma coluna 
+    de 200px;
+
+    'grid-template-columns: repeat(2, 100px 200px)'             - 4 colunas - 2 colunas de 100px e 2 colunas de 200px, na ordem informada: 
+    100px, 200px, 100px, 200px; 
+    'grid-template-columns: repeat(2, 100px) repeat(3, 200px)'  - 2 colunas de 100px e 3 colunas de 200px
+
+    'grid-template-columns: repeat(auto-fill, 200px)'           - quando queremos definir uma quantidade indefinida de colunas de ex.: 200px 
+    com base no tamanho disponível da área do Grid - será quantas colunas puder até que o tamanho disponível não consiga encaixar uma nova 
+    coluna.
+*/
+
+.container{
+    display: grid;
+    gap: 10px;
+    /* Para valores automáticos é importante saber que o gap com auto e o gap com fr são diferentes - o auto não considera o gap, já o fr para
+    determinar o 2fr - dobro, e assim por diante - considera o 1fr mais o seu gap. Quando tivermos posicionando e intercalando itens, essa 
+    diferença ficará mais evidente. */
+    grid-template-columns: 100px repeat(3, 1fr) 200px;
+
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}

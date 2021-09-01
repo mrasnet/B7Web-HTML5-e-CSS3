@@ -1,0 +1,35 @@
+/*  #M11 aula #7: Usando minmax
+
+    Será responsável por realizar um cálculo que irá definir o valor máximo e mínimo de uma propriedade que iremos definir.
+
+    Primeiramente:
+    ex.:
+    'grid-auto-rows: 100px'     - ou 'grid-auto-columns' - define o tamanho padrão para todas as linhas/colunas
+
+    Quando temos um problema como o definido aqui no exemplo, aqui entra o 'minmax', onde iremos definir um valor mínimo e um valor máximo - 
+    no caso irá ficar entre um ou outro. Basicamente o 'minmax' irá fazer um apanhando de todas as linhas, ver qual é a linha que tem o 'maior
+    tamanho' - com relação ao conteúdo - definir o valor máximo para essa e mínimo para as demais. Se numa linha o conteúdo de um item 
+    ultrapassar o tamanho mínimo definido para essa linha, irá operar o tamanho máximo para essa linha - Isso com relação a Linhas.
+
+    Podemos aplicar esse mesmo conceito não só nessa propriedade, mas em qualquer outra - em qualquer lugar do Grid:
+    ex.:
+
+    'grid-template-columns: repeat(8, minmax(200px, 300px))'    - o efeito para colunas, não irá fazer uma coluna ter um tamanho diferente de 
+    outra - será o mínimo para todas ou máximo para todas.
+*/
+
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
