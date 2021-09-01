@@ -1,0 +1,30 @@
+/*  #M11 aula #5: Unidade FR
+
+    Aprendendo esse recurso expandiremos a nossa mente bastante com relação as possibilidades. A unidade FR Foi criado para o Grid - só funciona 
+    nesse - e representa uma fração do espaço disponível do grid.
+
+    ex.:
+    grid-template-columns: 1fr 2fr 1fr    - '1fr' representa o tamanho minimo com relação aos demais itens do container e o espaço disponível
+    do container, '2fr' será o dobro e assim por diante.
+
+    São unidades que são 100% flexíveis perante aos itens que estão ao redor delas. Com isso, podemos criar layouts que são 100% responsivos.
+    O Bootstrap é um exemplo que utiliza muito esse conceito de um item se adaptar ao outro de forma a conseguir deixar tudo responsivo.
+    
+    Entendido isso, agora podemos começar a juntar um recurso com outro de forma a criar nossas soluções.
+*/
+
+.container{
+    width: 700px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
