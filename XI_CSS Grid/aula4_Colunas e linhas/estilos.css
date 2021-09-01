@@ -1,0 +1,36 @@
+/*  #M11 aula #4: Colunas e linhas
+
+    Vamos começar a entender como realizar a separação entre linhas e colunas:
+
+    grid-template-columns       - define quantas colunas tem o grid - geralmente definimos um grid pela quantidade de colunas que ele vai ter, 
+    daí depois vamos atualizando e modificando as coisas.
+
+    Se quisermos um grid com 3 colunas ex.:
+
+    'grid-template-columns: 100px 100px 100px'    - vai definir 3 colunas com 100px de LARGURA
+
+    grid-template-rows          - define basicamente a mesma coisa, só que nas linhas - só que temos menos 'controle' sobre isso, devido o fato
+    de geralmente não sabermos quantas linhas iremos ter - definimos colunas, mas linhas, a depender do conteúdo pode passar do definido - por
+    isso definimos o Grid pelas colunas, e adaptamos com relação as linhas.
+
+    'grid-template-rows: 100px'               - nesse caso estamos definindo que a primeira linha terá ALTURA de 100px
+    'grid-template-rows: 100px 200px 50px'    - nesse caso estamos definindo que a primeira linha terá ALTURA de 100px, a segunda 200px, e 
+    a terceira 50px - a lógica é a mesma para definirmos para demais linhas.                     
+*/
+
+.container{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* podemos definir valores fixo e automáticos */
+    grid-template-columns: 300px auto 500px;
+    grid-template-rows: 100px 200px 80px 150px;
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
