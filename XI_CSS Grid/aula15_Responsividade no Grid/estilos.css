@@ -1,0 +1,54 @@
+/*  #M11 aula #15: Responsividade no Grid
+
+    Responsividade com o Grid se torna muito simples de resolver
+*/
+
+.container{
+    background-color: #CCC;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    /* Podemos definir o tamanho de um item fazendo o outro maior e vice-versa, mas se ainda assim não atingir um resultado próximo do que 
+    queriamos, podemos adicionar mais colunas e redefinir o tamanho dos itens novamente - O Bootstrap utiliza o layout com 12 colunas */
+        "header header header header"
+        "menu content content content"
+        "ad content content content"
+        "footer footer footer footer"
+    ;
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* nomeando os itens */
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: menu;
+}
+section{
+    grid-area: content;
+}
+footer{
+    grid-area: footer;
+}
+.ad{
+    grid-area: ad;
+}
+
+@media (max-width: 750px){
+    .container{
+        grid-template-areas: 
+            "header header header menu"
+            "content content content content"
+            "ad ad ad ad"
+            "footer footer footer footer"
+        ;
+    }
+}

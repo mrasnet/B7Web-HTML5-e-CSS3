@@ -1,0 +1,44 @@
+/*  #M11 aula #14: Estrutura de Layout em Grid
+
+    
+*/
+
+.container{
+    background-color: #CCC;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    /* Podemos definir o tamanho de um item fazendo o outro maior e vice-versa, mas se ainda assim não atingir um resultado próximo do que 
+    queriamos, podemos adicionar mais colunas e redefinir o tamanho dos itens novamente - O Bootstrap utiliza o layout com 12 colunas */
+        "header header header header header header header header"
+        "menu menu content content content content content content"
+        "ad ad content content content content content content"
+        "footer footer footer footer footer footer footer footer"
+    ;
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* nomeando os itens */
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: menu;
+}
+section{
+    grid-area: content;
+}
+footer{
+    grid-area: footer;
+}
+.ad{
+    grid-area: ad;
+}
+

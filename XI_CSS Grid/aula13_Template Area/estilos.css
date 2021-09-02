@@ -1,0 +1,60 @@
+/*  #M11 aula #13: Template Area
+
+    Temos dois propósitos na utilização do Grid Area - o Grid Area define ambos grid-column-start/end e grid-row-start/end
+    define na ordem -> grid-row-start e grid-column-start, grid-row-end e grid-column-end;
+
+    Apesar da simplicidade, não é o recurso mais utilizado, preferivelmente utilizam da outra forma - Esse é o primeiro proposito na utilização.
+    Geralmente, quando utilizamos o Grid Area utilizamos a função dois - segundo propósito - basicamente, é nomear uma área específica porque
+    depois podemos utilizar um outro recurso - o 'Template Area' - que nos vai permitir organizar de maneiras ainda mais avançadas.
+*/
+
+.container{
+    background-color: #CCC;
+    display: grid;
+    gap: 10px;
+    /* Dessa forma conseguimos montar o layout apenas com os nomes dos itens  */
+
+    /*                      //forma mais intuitiva
+    grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+    ;
+    */
+
+    /* 
+    grid-template-areas: 
+        "item1 item1"
+        "item2 item3"
+        "item4 ."           //ao definirmos o 'ponto' se entende que aquele espaço é vazio 
+    ;
+    */
+
+    grid-template-areas: 
+        "item1 item1 item2"
+        "item3 . item2"
+        "item4 item4 item4"       
+    ;
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* nomeando os itens */
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+
