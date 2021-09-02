@@ -1,0 +1,48 @@
+/*  #M11 aula #10: Mesclando itens em linhas (2/3)
+
+    Essa é talvez a aula mais importante desse modulo, isso porque o conteúdo dessa aula se entendido permitirá que consigamos fazer "milagres"
+    com o CSS Grid.
+
+    Nesse momento, não vamos mais mexer tanto no container - um pouco apenas - e sim mais nos itens específicos.
+    É importante entender o conceito de 'linha imaginária' que nos permitirá estruturarmos os itens da forma que precisamos:
+
+    'Linhas imaginárias'   - referente aos lados de cada coluna: ex.: uma tabela com 3 colunas possui 4 lados  | a | b | c | - o número de 
+    traços verticais;
+    'Linhas imaginárias'   - referente também aos lados da linha, sempre contando da parte superior e terminando com a infeior da última posição;
+
+    Podemos fazer o mesmo para linhas (horizontal) - porém obrigatóriamente iremos ter que definir na coluna também
+*/
+
+.container{
+    background-color: #CCC;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.item{
+    background-color: #00f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+/* Para posicionar um item onde quisermos - ao definir as propriedades é possível que no processo gere novas linhas devido o fato dos demais 
+itens serem empurrados quando esse é movido */
+.item7{
+    background-color: #0f0;
+    color: #000;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.item5{
+    background-color: #f00;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
