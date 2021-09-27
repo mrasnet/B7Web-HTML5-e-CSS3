@@ -207,7 +207,7 @@ footer a:hover{
         padding-right: 20px;
     }
 }
-@media (min-width: 426px) and (max-width: 768px){
+@media (min-width: 478px) and (max-width: 768px){
 
     .area1{
         grid-template-columns: 3fr 2fr;
@@ -222,7 +222,7 @@ footer a:hover{
         padding-left: 0px;
     }
 }
-@media (max-width: 425px){
+@media (max-width: 477px){
     .header--search input{
         max-width: 120px;
     }
