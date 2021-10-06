@@ -1,0 +1,39 @@
+#M2 aula #8: Bordas no CSS 
+
+  1. overflow hidden
+
+
+
+#M2 aula #11: Dicas sobre width e height
+
+  1. *{}		- asterisco + chaves - permite aplicar efeito a todos os elementos
+
+  2. box-sizing : propri: (content-box / border-box)    - define como deve ser considerado 
+							o tamanho de um elemento
+
+
+#M2 aula #12 e 13: Links
+
+:visited   - Se link já foi visitado
+
+
+
+#M3 aula #6: Tabelas no CSS
+
+:nth-child(even)	- "Aplica o efeito numa linha sim e em outra não (PAR-IMPAR)"
+
+
+
+#M3 aula #14 e 15: Formatando formulários no CSS
+
+outline 0       - Remove a borda azul que vem por padrão no Google Chrome
+resize: none    - impede de que o usuário estique a caixa de texto que por padrão permite
+
+
+
+
+
+
+
+
+			

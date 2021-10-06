@@ -3,11 +3,10 @@
     Formulários:
 
     1. form = define grupo de formulario
-    2. GET = manda os dados pela URL / POST = envia internamente
+    2. method = GET - manda os dados pela URL / POST - envia internamente
 
-    2. input        - type: text (password / email ) / checkbox / radio / submit
-    3. propriedades: name = define um nome / value = define um valor para o campo
-
+    3. input         - type: text (password / email ) / checkbox / radio / submit
+        * propriedades: name = define um nome / value = define um valor para o campo
 -->
 <!DOCTYPE html> 
 <html>
@@ -21,20 +20,24 @@
    <h1>Página Teste</h1>
 
    <h2>Área de Cadastro</h2>
+   
    <div>
    <!-- grupo de formulário -->
-   <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
-        <input type="text" name="nome" value="Insira o nome"/>
-        <br/><input type="password" name="senha"/>
-        <br/><input type="checkbox" name="caixa"/>
-        <!-- Para utilziar um botão de radio é necessário definir um grupo, name define o grupo -->
-        <br/>
-        <input type="radio" name="sexo" value="m"/> Masculino
-        <input type="radio" name="sexo" value="f"/> Feminino
-        <br/><input type="email" name="email" value="Insira o email"/> <!-- variante do campo de texto, porém é pre-formatado para receber email -->
-        <!-- botão de envio -->
-        <br/><input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
-   </form>
+        <form action="login.html" method="GET">
+
+            <input type="text" name="nome" value="Insira o nome"/><br/>
+            <input type="password" name="senha"/><br/>
+            <input type="checkbox" name="caixa"/><br/>
+
+            <!-- Para utilizar um botão de radio é necessário definir um grupo, name define o grupo -->
+            <input type="radio" name="sexo" value="m"/> Masculino
+            <input type="radio" name="sexo" value="f"/> Feminino
+
+            <!-- variante do campo de texto, porém é pre-formatado para receber email -->
+            <br/><input type="email" name="email" value="Insira o email"/> 
+            <!-- botão de envio -->
+            <br/><input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
+        </form>
     </div>
     
    <h2>Área de Login</h2>

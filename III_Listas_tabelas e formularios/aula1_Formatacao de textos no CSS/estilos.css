@@ -5,7 +5,7 @@
     3. font-weight      - permite definir valores como: negrito (bold)/ normal, para a fonte 
     4. font-family      - define o(s) tipo(s) de fonte(s)
     5. text-align       - define o alinhamento do texto (padrão: left - also: right / center / justify)
-    6. text-decoration  - define decorações no texto - (none / underline / overline/ line-through)   
+    6. text-decoration  - define decorações no texto - (none / underline / overline / line-through)   
 */
 * {
     box-sizing: border-box;

@@ -11,7 +11,7 @@
 body {
     margin: 50px;
     font-size: 17px;
-    font-family: 'chilanka', cursive; /* define a font importada do google - Eu quis deixar */
+    font-family: 'chilanka', cursive; 
 }
 
 div {
@@ -21,10 +21,12 @@ div {
     padding-left: 30px;
     border-bottom: 1px solid #423f3f;   
 }
+
 /* Como os itens do formulário estão contidos dentro do label, é possível definir configurações nesse label e ter um resultado visual em 
 seus itens contidos */
 label {
-    /* display: inline;  - por padrão o label vem configurado dessa forma */
+    /* 
+    display: inline;  - por padrão o label vem configurado dessa forma */
     display: block;  /* transforma a exibição em bloco, como se fosse uma div, ficará um abaixo do outro */
     margin-bottom: 15px;
 }
@@ -50,6 +52,7 @@ textarea {
     height: 150px; /* Como queremos definir altura só para o textarea definimos separadamente */
     resize: none; /* impede de que o usuário estique a caixa de texto que por padrão permite */
 }
+
 /* Aguns sites fazem a seguinte configuração pq preferem que seus usuários não tenham que ler seus termos de serviço */
 .termoslink {
     color: #000;
@@ -64,6 +67,7 @@ button {
     font-size: 15px;
     border: 1px solid #CCC;
     background-color: #EEE;
+    cursor: pointer; /* Por padrão button não define 'cursor pointer' */
 }
 button:hover {
     background-color: #DDD;

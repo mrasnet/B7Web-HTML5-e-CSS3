@@ -3,24 +3,25 @@
     Formulários:
 
     1. form = define grupo de formulario
-    2. GET = manda os dados pela URL / POST = envia internamente
-    
-    3. input        - type: text (password / email) , checkbox, radio, submit;
-    4. propriedades: name = define um nome (imprescendível) / value = define um valor para o campo 
-    
-    5. variações do text (para browser moderno): color / date / datetime-local / time / week / month / number / range / search / tel / url    
-    
-    6. Select - seleção: option - opção:
-    propriedades select:  name / size - multiple
-    propriedades option:  value / selected 
+    2. method = GET - manda os dados pela URL / POST - envia internamente
 
-    7. textarea - área de texto - propriedades: rows / cols (define o número de linhas e colunas, porém está em desuso e diferentes navegadores
+    3. input         - type: text (password / email ) / checkbox / radio / submit
+        * propriedades: name = define um nome / value = define um valor para o campo 
+    
+    4. variações do text (para browser moderno): color / date / datetime-local / time / week / month / number / range (propri: min - max)
+    / search / tel / url    
+    
+    5. Select - área de seleção / option - opção:
+    propriedades do select:  name / size - multiple
+    propriedades do option:  value / selected 
+
+    6. textarea - área de texto - propriedades: rows / cols (define o número de linhas e colunas, porém está em desuso e diferentes navegadores
     podem determinar diferentes valores definidos nessas propriedades) 
 
-    8. button - botão - dentro de um formulário age da mesma forma que o input submit, porém pode ser usada fora de formulários 
+    7. button - botão - dentro de um formulário age da mesma forma que o input submit, porém pode ser usada fora de formulários 
 
-    9. label  - etiqueta - serve para nomear campos exibidos ao usuário
-    propriedades: for = define o id de um campo associado a esse label - outra forma de ter o mesmo efeito é colocar o campo dentro da tag label
+    8. label  - etiqueta - serve para nomear campos exibidos ao usuário
+    propriedades: for - define o id de um campo associado a esse label - outra forma de ter o mesmo efeito é colocar o campo dentro da tag label
 -->
 <!DOCTYPE html> 
 <html>
@@ -34,20 +35,22 @@
    <h1>Página Teste</h1>
 
    <h2>Área de Cadastro</h2>
+   
    <div>
    <!-- grupo de formulário -->
-        <form action="login.html" method="GET"> <!--GET = manda os dados pela URL, POST = envia internamente -->
-                <label for="campoNome">Nome:</label><!-- for associa o label com um campo específico -->
-                <input id="campoNome" type="text" name="nome" value="Insira o nome"/>   
-                <br/>
-                <!-- Segundo forma: mesmo efeito de utilizar o for e sem necessidade de atribuir um id ao input-->
-                <label><input type="checkbox" name="campodeMarcar"/>Li e aceito os termos de uso</label>
-                
-                <textarea name="areatexto">O texto que eu colocar aqui fica dentro da área de texto</textarea>
-                <br/>
-                <button>Texto do botão</button>
-                <!-- botão de envio -->
-                <input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
+        <form action="login.html" method="GET"> 
+
+            <label for="campoNome">Nome:</label><!--  'for' associa o label com um campo específico -->
+            <input id="campoNome" type="text" name="nome" />   
+            <br/>
+            <!-- Segunda forma: mesmo efeito de utilizar o for e sem necessidade de atribuir um id ao input-->
+            <label><input type="checkbox" name="campodeMarcar"/>Li e aceito os termos de uso</label>
+            
+            <textarea name="areatexto">O texto que eu colocar aqui fica dentro da área de texto</textarea>
+            <br/>
+            <button>Texto do botão</button>
+            <!-- botão de envio -->
+            <input type="submit" value="Confirmar"/><!-- por padrão em ptbr vem como "enviar"-->
         </form>
     </div>
     

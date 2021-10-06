@@ -1,12 +1,14 @@
 /* #M2 aula #8: Bordas no CSS 
 
-  *** É possível colocar bordas em qualquer elemento
+  * É possível colocar bordas em qualquer elemento
     1. border/border-top (left - right - bottom) : arg1px tipo #000    - Tamanho, tipo e cor da borda 
-    2. border-radius: argpx;                                           - Borda arredondada: arg informa o raio 
-    3. overflow hidden                                                 - a ser coberto...
+    2. border-radius: argpx;                                           - Borda arredondada: arg informa o raio - também se definem para lados
+    específicos.
+    
+    * propriedade: overflow hidden                                     - a ser coberto...
 
-  Tipos de bordas: solid (mais usada), dotted (pontilhada), dashed (tracejada), double (dois traços)
-  groove (tipo um solid mais escuro), entre outras menos utilizadas 
+  Tipos de bordas: solid (mais usada), dotted (pontilhada), dashed (tracejada), double (dois traços) groove (tipo um solid mais escuro), entre
+  outras menos utilizadas.
 */
 #titulo {
     background-color: rgb(0, 0, 0);
@@ -21,8 +23,8 @@ p {
   background-color: #daa520;
   border-radius: 5px; /* Borda arredondada, informa o raio - aqui de 5px */
 }
-/* a div é uma espécie de bloco, aqui definimos um quadrado (altura e largura iguais), com o uso do border-radius
-com um valor de 100px (métade de 200px que é o height/width definido), transforma a div num circulo */
+/* a div é uma espécie de bloco, aqui definimos um quadrado (altura e largura iguais), com o uso do border-radius com um valor de 100px (métade
+de 200px que é o height/width definido), transforma a div num circulo */
 div{
     background-color: #3ed81f;
     width: 200px;

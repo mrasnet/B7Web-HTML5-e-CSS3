@@ -6,9 +6,8 @@
     4. max(min) - width / height  - define um valor máximo ou mínimo para as propriedade width e height
     * max e min sempre vão ter prioridade sobre qualquer outras difinições feitas
 
-    prop: 
-    auto - define o tamanho automático de acordo com o espaço disponível (auto-ajuste) - equivale a não definir aquela propriedade (padrão)
-
+    propri: 
+        auto - define o tamanho automático de acordo com o espaço disponível (auto-ajuste) - equivale a não definir (padrão)
  */
 
 body{
@@ -24,6 +23,6 @@ body{
 
 img{
     width: inherit; /* Herda width de .exemplo já que img tá contida na div */
-    max-width: 50%; /* Define um valor máximo apesar de herdar tal atributo de um elemento pai. Ver também  min-width -  um valor mínimo
+    max-width: 50%; /* Define um valor máximo apesar de herdar tal atributo de um elemento pai - ver também min-width. Um valor mínimo
     definido não permite um valor menor que esse. Num valor máximo definido não permite um valor maior que esse */
 }
