@@ -2,17 +2,20 @@
 
     Unidades de medidas que irão mudar de tamanho com base nos elementos da própria página
 
-    em      - "1 em" corresponde ao valor definido na classe pai, "2 em"... em diante, é esse valor multiplicado pelo o inteiro definido
+    em      - "1 em" corresponde ao valor definido no font-size do elemento pai, "2 em"... em diante, é esse valor multiplicado pelo o inteiro 
+        definido.
     rem     - evolução do "em", entretanto possui a diferença em que os elementos definidos com rem relacionam-se diretamente com o elemento 
-    root (com o valor definido no primeiro elemento da estrutura).
-        O valor de referencia é único para todos que dele desejam usar com o rem - muito útil para responsividade
-        Quando não se define um valor num elemento root, o rem é definido pelo o valor padrão, geralmente o padrão do html, 16px.
+        root (com o valor definido no primeiro elemento da estrutura - a tag html).
+            O valor de referencia é único para todos que dele desejam usar com o rem - muito útil para responsividade
+            Quando não se define um valor num elemento root, o rem é definido pelo o valor padrão, geralmente o padrão do html, 16px.
+
+    Nota: Para ambos também é possível utilizar valores quebrados.
    
-    %   - porcentagem:  refere-se ao espaço disponível dentro de um container e não do monitor. Principalmente quando se trabalha com a largura
+    %   - porcentagem:  refere-se ao espaço disponível dentro de um container e não do monitor. Principalmente quando se trabalha com a largura,
     uma div irá responder diretamente ao seu container. Geralmente é utilizada para estruturas. 
     ex  - refere-se ao tamanho da letra x minúscula da fonte usada para definir "1 ex" - pouco utilizada.
     ch  - refere-se ao espaçamento de um caractere, entretanto só serve para fontes monospace (que possuem o mesmo espaçamento para todos os 
-    caracteres).
+    caracteres - ex.: a fonte 'Courier').
 */
 
 .box{

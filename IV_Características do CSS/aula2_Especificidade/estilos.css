@@ -1,8 +1,10 @@
 /*  #M4 aula #2: Especificidade 
 
-    O CSS define propriedades de cima para baixo, as últimas feitas prevalecem quando não há especificidade explicita.
+    O CSS define propriedades de cima para baixo, as últimas definidas prevalecem quando não há especificidade explicita.
     classes são mais especificas que tags, e se usarmos - elemento1 elemento2{pro1: arg} - temos uma maior especificidade do que
-    se usassemos apenas: elemento2{pro1: arg}
+    se usassemos apenas: elemento2{pro1: arg} 
+
+    Entre um específico e um específico de mesmo nível, prevalece o último definido.
 */
 body{
     margin: 0;

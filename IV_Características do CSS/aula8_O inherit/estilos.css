@@ -1,5 +1,8 @@
 /*  #M4 aula #8: O inherit
 
+    Forçar Herança - geralmente poucos os casos em que é utilizado, porém é mais utilizado para fontes mas também permite a utilização em 
+    definições de estruturas.
+
     Uma vez que definições mais gerais são definidas de seus containers para seus elementos naturalmente, o inherit é mais utilizado para 
     definições num elemento mais específico. Assim o inherit permite forçar herança.
 */

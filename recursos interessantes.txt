@@ -30,10 +30,26 @@ outline 0       - Remove a borda azul que vem por padrão no Google Chrome
 resize: none    - impede de que o usuário estique a caixa de texto que por padrão permite
 
 
+#M3 aula #16: Tags Fieldset e Legend ********
+
+#M3 aula #17 #18: Validações Nativas (required, minlength, maxlength, pattern etc.) *****
+
+
+#M4 aula #4: Unidades de medida absoluta (px, pt, in, cm) ************
+
+#M4 aula #5 #6 e #7: Unidades de medida relativa (#5 e #6 (fonte), #7 viewport)***********
+
+	em, rem, %, ex, ch, vh, vw, vmin, vmax
+
+#M4 aula #8: O inherit
 
 
 
 
 
 
-			
+
+
+
+
+
