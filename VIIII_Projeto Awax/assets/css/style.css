@@ -1,0 +1,146 @@
+/*  
+
+montserrat font:
+        light 300, regular 400, semi-bold 600, bold 700
+    
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: "Montserrat", arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+header{
+    background-color: #000;
+    height: 100px;
+    color: #fff;
+}
+.HeaderContent{
+    max-width: 1140px;
+    height: 100px; /* É necessário definir altura aqui também */
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px; /* define tamanho fixo para area do logo, enquanto o menu recebe flex 1, para poder ocupar o resto do espaço */
+}
+.logoimg{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: #B28756;
+}
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul, menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* Por padrão a tag a, tem display inline, por isso é necessário torná-la um tipo de display que aceite altura, no caso flex, só dessa forma o border-bottom irá funcionar pegando a parte mais baixa do espaço definido */
+    /* display: block; é um tipo de display que aceita altura, mas alteramos para o flex para ficar melhor de centralizar o conteudo no meio */
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid #000; /* É definido por padrão uma borda com a cor do fundo para evitar que o hover ao adicionar a borda, o conteudo acabe subindo toda vez que passe o mouse */
+}
+.menu li a:hover, .menu .active a{ /* a classe active é para identificar o menu ativo */
+    border-bottom: 5px solid #B28756;
+    color: #ccc;
+}
+
+.banner{
+    height: calc(100vh - 100px); /* queremos todo o espaço da tela mas temos que descontar os 100px do menu */
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block; /* dessa forma, o inline define que fiquem um ao lado do outro, enquanto o block permite manter as configurações definidas nesses*/
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h1 span{
+    color: #B28756;
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.banner a{
+    display: block;
+    background-color: #B28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .pointer{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.banner .pointer.active{ /* É .pointer.active (TUDO JUNTO), tem que ter as duas classes para surtir efeito */
+    background-color: #B28756;
+}

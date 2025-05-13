@@ -26,10 +26,10 @@ body{
 }
 
 div:nth-child(1){
-    font-size: 33px;
+    font-size: 25px;
 }
 div:nth-child(2){
-    font-size: 27px;
+    font-size: 20px;
     border-bottom: 1px solid #fff;
     padding-bottom: 3px;
 }
